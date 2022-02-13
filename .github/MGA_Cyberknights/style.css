@@ -3,10 +3,13 @@
     Spring 2022
     Designed by MGA SC-Team2
 
-    Color Codes:
+    Color Codes Used:
     Black			: #000000
 	White			: #FFFFFF
-    Example         : #867530
+    MGA Purple 	    : #633394
+    Green           : #369019
+    Dark Green      : #1A6010
+
             
     MGA Colors for Reference:	
 	Main Purple 	: #633394
@@ -18,25 +21,176 @@
 	Coal			: #2C2C2C
 */
 
-/* Body Style 
+/*          global styles
+================================================== */
+
+* {
+    font-family: 'Roboto Serif', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Roboto Serif', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+    text-shadow: 1px 1px #633394;
+}
+
+h2 {
+    text-align: left;
+    font-family: 'Roboto Serif', sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px #633394;
+    font-size: 40px;
+}
+
+
+/* body style 
 ================================================== */
 body {
     margin: 0;
     font-family: 'Roboto Serif', sans-serif;
     background-color: white;
     font-weight: bold;
+}
+
+
+/* header style 
+================================================== */
+header {
+    text-align: center;
+    display: contents;
+    margin: 0;
+    padding: 25px 25px;
+    background-color: lightgray;
+}
+
+header h1 {
+    font-size: 65px;
+    font-family: 'Roboto Serif', sans-serif;
+    margin: 0;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-right: 25%;
+    padding-left: 5%;
+    text-shadow: 3px 3px #369019;
+    
 
 }
 
-/* Navbar Style 
-================================================== */
+.headerContent {
+    width: 100%;
+    overflow: auto;
+    padding-bottom: 15px;
+    background: linear-gradient(to bottom, #633394 0%, #c9ced1 100%);
+}
 
+/* header image style
+================================================== */
+#KnightsLogo {
+    max-height: 260px;
+    float: left;
+    margin-right: 15px;
+    padding-left: 25%;
+    padding-right: 5%;
+    margin-top: 5px;
+    
+}
+
+
+/* navbar section style  
+================================================== */
+.navbar {
+    background-color: #f1f1f1;
+    position: sticky;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 1.6em;
+    line-height: 25px;
+    border-radius: 4px;
+    outline: 7px solid #633394;
+    background-color: #2C2C2C;
+    z-index: 99;
+}
+
+.navbar a {
+    color: white;
+    text-align: center;
+    padding: 12px 12px;
+    text-decoration: none;
+    font-size: 1.6em;
+    line-height: 25px;
+    border-radius: 4px;
+    width: 20%;
+        
+}
+
+#homeBtn {
+    color: white;
+    text-align: center;
+    padding: 25px 50px;
+    text-decoration: none;
+    line-height: 25px;
+    border-radius: 4px;
+    width: 20%;
+    text-shadow: 3px 3px #633394;
+
+}
+
+/* subnav section style  
+================================================== */
+.subnav {
+    float: none;
+    display: inline-block;
+    position: relative;
+
+}
+
+.subnav-content {
+    font-size: 0.7em;
+    display: none;
+    position: absolute;
+    left: 0;
+    background-color: #633394;
+    width: max-content;
+    z-index: 1;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border: 7px solid black;
+
+}
+
+.subnav-content a {
+    float: none;
+    color: white;
+    text-shadow: 3px 3px black;
+        
+}
+
+.subnav .subnavbtn {
+    font-size: 1.6em;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 25px 50px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    text-shadow: 3px 3px #633394;
+
+}
+
+.subnav:hover .subnav-content {
+    display: block;
+
+}
 
 /* Page Wrapper Style 
 ================================================== */
-
 .wrapper {
-    text-align: center;
+    text-align: left;
     width: 90%;
     margin: 0 auto;
     max-width: 900px;
@@ -47,8 +201,23 @@ body {
 
 }
 
+/* footer styles
+================================================== */
+footer {
+    text-align: center;
+    padding-bottom: 20px;
+
+}
+
+footer h3 {
+    font-family: 'Roboto Serif', sans-serif;
+    font-weight: bold;
+    color: black;
+    text-shadow: 1px 1px #633394;
+}
+
 /* Style for "divider1" at the top of the footer */
-hr { 
+hr {
     border-top: 4px solid black;
     width: 85%;
     margin: 0 auto;
@@ -56,9 +225,34 @@ hr {
 }
 /* 
     TEAM2 NOTES== If we need to add more styles for a certain page, 
-    add a new comment section such as the "Body, Navbar, and Page Wrapper" sections 
+    add a new comment section such as the above sections 
 
 */
+
+
+/* events tab page styles */
+
+
+
+
+
+/* training tab page styles */
+
+
+
+
+
+/* about us tab page styles */
+
+
+
+
+
+/* contact us tab page styles */
+
+
+
+
 
 /* 
     TEAM2 NOTES== I am adding in the section below for a placeholder; once we complete the design phase and start testing, we need to determine

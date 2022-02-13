@@ -1,0 +1,69 @@
+﻿/*
+    Style Sheet for the MGA Cyberknights website
+    Spring 2022
+    Designed by MGA SC-Team2
+
+    Color Codes:
+    Black			: #000000
+	White			: #FFFFFF
+    Example         : #867530
+            
+    MGA Colors for Reference:	
+	Main Purple 	: #633394
+	Darker Purple	: #42337E
+	Darker Gray		: #B0B6BB
+	Gray			: #C9CED1
+	Black			: #000000
+	White			: #FFFFFF
+	Coal			: #2C2C2C
+*/
+
+/* Body Style 
+================================================== */
+body {
+    margin: 0;
+    font-family: 'Roboto Serif', sans-serif;
+    background-color: white;
+    font-weight: bold;
+
+}
+
+/* Navbar Style 
+================================================== */
+
+
+/* Page Wrapper Style 
+================================================== */
+
+.wrapper {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    max-width: 900px;
+    color: black;
+    font-size: 1.2em;
+    font-family: 'Roboto Serif', sans-serif;
+    font-weight: bold;
+
+}
+
+/* Style for "divider1" at the top of the footer */
+hr { 
+    border-top: 4px solid black;
+    width: 85%;
+    margin: 0 auto;
+
+}
+/* 
+    TEAM2 NOTES== If we need to add more styles for a certain page, 
+    add a new comment section such as the "Body, Navbar, and Page Wrapper" sections 
+
+*/
+
+/* 
+    TEAM2 NOTES== I am adding in the section below for a placeholder; once we complete the design phase and start testing, we need to determine
+    what this section with encompass
+*/
+
+/*@Media Styles 
+================================================== */

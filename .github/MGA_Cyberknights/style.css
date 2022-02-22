@@ -2,14 +2,12 @@
     Style Sheet for the MGA Cyberknights website
     Spring 2022
     Designed by MGA SC-Team2
-
     Color Codes Used:
     Black			: #000000
 	White			: #FFFFFF
     MGA Purple 	    : #633394
     Green           : #369019
     Dark Green      : #1A6010
-
             
     MGA Colors for Reference:	
 	Main Purple 	: #633394
@@ -42,6 +40,11 @@ h2 {
     font-weight: bold;
     text-shadow: 1px 1px #633394;
     font-size: 40px;
+}
+
+iframe{
+   display:block;
+   margin:auto;
 }
 
 
@@ -226,7 +229,6 @@ hr {
 /* 
     TEAM2 NOTES== If we need to add more styles for a certain page, 
     add a new comment section such as the above sections 
-
 */
 
 

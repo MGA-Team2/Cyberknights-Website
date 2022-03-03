@@ -238,8 +238,25 @@ hr {
 
 
 
-/* training tab page styles */
+/* ctf-training tab page styles */
 
+
+
+
+
+
+/* cyber-training tab page styles */
+.cybersecurity-content {
+    text-decoration: none;
+    font-size: 1em;
+    list-style-type: none;
+}
+
+.cybersecurity-source {
+    font-size:medium;
+    list-style-type: none;
+    text-decoration: none;
+}
 
 
 

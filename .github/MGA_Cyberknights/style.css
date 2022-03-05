@@ -258,7 +258,27 @@ hr {
     text-decoration: none;
 }
 
+.metasploit-content {
+    font-size: 1em;
+    font-style: normal;
+}
 
+
+.metasploit-title {
+    font-size: 1.5em;
+    font-style: bold;
+}
+
+.NoBullet-list {
+    list-style-type: none;
+}
+
+.Large-Font {
+    text-align: center;
+    font-family: 'Roboto Serif', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
 
 
 /* about us tab page styles */

@@ -98,25 +98,49 @@
             <div class="pageContent">
             <!-- TEAM2 NOTES== Insert all page content within this section -->
             <br /><br />
-            <h1 class="cybersecurity-content">
-                
+            <h1 class="cybersecurity-content">            
+                <li><a href="cyber-training.html">CYBERSECURITY</a></li>
+                <li><a href="METASPLOIT.html">METASPLOIT</a></li>
+                <li><a href="PIVOTING.html">PIVOTING</a></li>
+                <li><a href="POST-EXPLOITATING.html">POST-EXPLOITATING</a></li>
+                <br /><br />
             </h1>
+            <h2>
+                MSFvenom
+            </h2>
+
             <p>
-                Insert page content here. 
+                Metasploit is a penetration testing tool and is often listed as the world’s most widely used pen-testing tool. 
+                There is a free version but with limited features. The pro version starts at $5,000 with full features starting at $15,000 per year. 
+                In simple terms, Metasploit makes hacking easier. It offers a command-line interface, but the GUI-based version is available in the Pro version. 
+                It offers a PS Exec feature that can kill a process from another computer to one that is frozen. 
+                It integrates with Nmap, SNMP scanning, and Windows patch enumeration and most reconnaissance tools integrate with Metasploit. 
+                Metasploit includes a massive database with exploits that will work to crack open a system weakness. 
+                It also has tools that help with privilege escalation, pass the hash, pivoting tools, packet sniffing, keyloggers, and screen capture among many more features. 
+                Metasploit can also be modified to the user's needs. It is a total package solution.
             </p>
-            <p>
-                As it stands right now, the two main title header tags, h1 and h2, the h1 tag is set to be a centered
-                title, while the h2 tag is the same size, but it is left-aligned.
+            <p>Previously, MSFpayload was a command-line instance of Metasploit which was used to generate and output all the different types of shellcode that were within and available to use in Metasploit. MSFencode was used for exploiting as well. It was a separate tool that was meant to be used after a shellcode has been generated from MSFpayload. It needs to be encoded to suit the target for it to function properly.</p>
+            <p>Since 2015 there has been MSFvenom which gives you both of those tools together, it has standardized command line options and it’s faster than the previous tools separately.</p>
+            <p>Why exactly is MSFvenom important? It’s important because of what shellcodes can do. Today many hackers use malicious windows shellcode as a main attack vector which have been used to exploit many corporations. What a hacker does is ‘booby-traps’ a file with malicious code and sends that file to someone. The file could be labeled as something important, for example: if someone is at work, it would be labeled as something work-related. Because it is related to that person, usually they open the file. By doing that, because the hacker has bound the shellcode into that file with software, a hacker can then gain access to the computer and has successful infiltrated that system.</p>
+            <p>MSFvenom is a simple tool to use and it has several options. You can start off using the tool with these options:</p>
+            <img id="msfvenom" src="images/msfvenom.png" alt="Cyberknights picture" width=600 height=550;" />
+            <h2>Video Resources</h2>
+            <p class="Large-Font">
+                Generating Shellcode with MSFvenom
             </p>
-            <br />
-            <h1>Example h1 tag</h1>
-            <h2>Example h2 tag</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque pretium tortor non ornare venenatis.
-                Morbi imperdiet facilisis commodo.
-                Fusce efficitur tortor odio, pellentesque pellentesque neque ornare a.
-            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/EUmu4MeCFJs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <p>Additional Resources</p>
+            <li><a href="https://www.rapid7.com/blog/post/2011/05/24/introducing-msfvenom/">Introducing MSFvenom</a></li>
+            <li><a href="https://github.com/rapid7/metasploit-framework/wiki/How-to-use-msfvenom">How to use MSFvenom</a></li>
+            <li><a href="https://nitesculucian.github.io/2018/07/24/msfvenom-cheat-sheet/">MSFvenom Cheat Sheet</a></li>
+            <li><a href="https://www.offensive-security.com/metasploit-unleashed/msfpayload/">MSFpayload</a></li>
+            <li><a href="https://www.offensive-security.com/metasploit-unleashed/msfencode/">MSFencode</a></li>
+            <li><a href="https://www.futurelearn.com/info/courses/cyber-security-business/0/steps/20755">A cyber hacker's toolkit: reconnaissance</a></li>
+           
+           
+           
+           
+           
             <br />
         </div> <!-- End of pageContent section -->
             <!-- Start of Scripts for Page -->
@@ -143,7 +167,7 @@
             <br>
             <!-- Copywrite Tags and links for the Terms of Use and Privacy Policy page links-->
             <h3 class="copywrite">&copy; SC - Team 2<br />2022</h3>
-            <a href="">Terms of Use</a> | <a href="">Privacy Policy</a>
+            <a href="terms-of-use.html">Terms of Use</a> | <a href="">Privacy Policy</a>
         </footer>
         </div> <!-- End of wrapper section -->
     </main> <!-- End of main section -->

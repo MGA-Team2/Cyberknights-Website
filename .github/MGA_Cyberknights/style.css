@@ -248,7 +248,10 @@ hr {
 /* events tab page styles */
 
 
-
+ /*Membership tab page styles*/
+.prop2 {
+    width: 80%;
+}
 
 
 /* ctf-training tab page styles */

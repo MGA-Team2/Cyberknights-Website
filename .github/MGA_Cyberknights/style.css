@@ -299,8 +299,13 @@ hr {
 
 /* about us tab page styles */
 
-
-
+/*Membership tab page styles*/
+.prop2 {
+    width: 20%;
+}
+.meetings {
+    
+    }
 
 /* contact us tab page styles */
 .contact-content {

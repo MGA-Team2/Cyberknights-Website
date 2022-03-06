@@ -26,6 +26,7 @@
     font-family: 'Roboto Serif', sans-serif;
 }
 
+
 h1 {
     text-align: center;
     font-family: 'Roboto Serif', sans-serif;
@@ -42,9 +43,21 @@ h2 {
     font-size: 40px;
 }
 
+h3 {
+    font-family: 'Roboto Serif', sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px #633394;
+}
+
 iframe{
    display:block;
    margin:auto;
+}
+
+/* Indention class */
+.tab {
+    text-indent: 40px;
+
 }
 
 
@@ -289,6 +302,7 @@ hr {
 /* contact us tab page styles */
 .contact-content {
     text-align: center;
+    font-weight: normal;
 }
 
 

@@ -314,12 +314,20 @@ hr {
 }
 
 /* Slideshow container */
-.slideshow-container {
-    max-width: 1000px;
-    position: relative;
-    margin: auto;
+
+.my-slides {
+    display: none;
+    width: 100%;
 }
 
+.slideshow {
+    max-width: 600px;
+    min-width: 600px;
+    border: 6px solid #633394;
+    text-align: center;
+    margin-left: 200px;
+    margin-top: 45px;
+}
 
 /* Hide the images by default */
 .mySlides {

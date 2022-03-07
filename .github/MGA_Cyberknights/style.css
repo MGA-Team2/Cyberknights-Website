@@ -323,7 +323,7 @@ hr {
 
 /* Hide the images by default */
 .mySlides {
-    display: none;
+    /*display: none;*/
 }
 
 

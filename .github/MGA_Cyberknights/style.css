@@ -235,7 +235,7 @@ footer h3 {
 /* Style for "divider1" at the top of the footer */
 hr {
     border-top: 4px solid black;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
 
 }
@@ -266,14 +266,14 @@ hr {
     text-decoration: none;
     font-size: 1em;
     list-style-type: none;
-    padding-left: 15%;
 
 }
 
 .cybersecurity-source {
-    font-size:medium;
+    font-size: medium;
     list-style-type: none;
     text-decoration: none;
+    padding-left: 15%;
 }
 
 .metasploit-content {

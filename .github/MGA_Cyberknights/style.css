@@ -262,11 +262,10 @@ hr {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
 }
 
-#calendar-title {
-    
-
+/* CTF page styles */
+.CTF-list {
+    padding-left: 10%; 
 }
-
 
 
 /*Membership tab page styles*/

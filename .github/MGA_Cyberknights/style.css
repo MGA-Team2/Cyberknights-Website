@@ -280,6 +280,8 @@ hr {
     margin: 2px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
+    margin-left: auto;
+    margin-right:auto;
     border-radius: 8px;
     width: 205px;
     height: 100px;

@@ -164,7 +164,7 @@ header {
         width: 20%;
     }
 
-#homeBtn {
+.homeBtn {
     color: white;
     text-align: center;
     padding: 25px 50px;

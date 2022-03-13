@@ -31,7 +31,6 @@
 <header>
     <div class="headerContent">
         <img id="KnightsLogo" src="images/CyberknightsLogo.png" alt="MGA Cyberknights Logo" />
-        </a>
         <h1 class="Header_Text">
             MGA
         </h1>
@@ -45,7 +44,7 @@
 <!-- Start of navbar section -->
 <div class="navbar">
     <!--Home Page-->
-    <a id="homeBtn" href="index.html">Home</a>
+    <a class="homeBtn" href="index.html">Home</a>
     <div class="subnav">
         <button class="subnavbtn">
             <!--Events subnav section-->
@@ -83,7 +82,7 @@
         <!--Contact Us subnav section-->
         <div class="subnav">
             <!--Contact Us subnav section-->
-            <a id="homeBtn" href="contact-us.html">Contact Us</a>
+            <a class="homeBtn" href="contact-us.html">Contact Us</a>
 
         </div> <!-- End of Contact Us subnav section -->
     </div> <!-- End of Contact Us subnav section -->
@@ -153,7 +152,7 @@
                 <img class="clipart" id="Home_Armory_Knight" src="images/knight_clipart.png" alt="Purple Knight Clipart" />
                 <p class="tab">
                     Many CTF Challenges incorporate many different tools, programs, methods, and concepts from Information Technology,
-                    Cybersecurity, and Penetration Testing such as <a href="METASPLOIT.html">Metasploit</a>, <a href="MSFVENOM.html">MSFvenom</a>, 
+                    Cybersecurity, and Penetration Testing such as <a href="METASPLOIT.html">Metasploit</a>, <a href="MSFVENOM.html">MSFvenom</a>,
                     <a href="PIVOTING.html">Pivoting</a>, <a href="POST-EXPLOITATING.html">Post-Exploitation</a>, among many others. Therefore, we working on and compiling an expansive list of various links,
                     Linux Distributions, and all-around helpful tools that anyone interested in Information Technology will find useful.
                     We have aptly named that list The Armory.
@@ -197,57 +196,56 @@
         </p>
         <!-- Button link to associated page -->
         <a href="contact-us.html"><span class="page_button">Contact Us</span></a>
-    </div> <!-- End of pageContent section -->
-    <!--Start of script section-->
-    <script>
-        var myIndex = 0;
-        carousel();
+        <!--Start of script section-->
+        <script>
+            var myIndex = 0;
+            carousel();
 
-        function carousel() {
-            var i;
-            var x = document.getElementsByClassName("my-slides");
-            for (i = 0; i < x.length; i++) {
-                x[i].style.display = "none";
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("my-slides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) { myIndex = 1 }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 10000); // Change image every 2 seconds
             }
-            myIndex++;
-            if (myIndex > x.length) { myIndex = 1 }
-            x[myIndex - 1].style.display = "block";
-            setTimeout(carousel, 10000); // Change image every 2 seconds
-        }
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-    <script>
-        function addDarkmodeWidget() {
-            new Darkmode().showWidget();
-        }
-        window.addEventListener('load', addDarkmodeWidget);
-    </script>
-    <script>
-        const options = {
-            bottom: '64px', // default: '32px'
-            right: 'unset', // default: '32px'
-            left: '32px', // default: 'unset'
-            time: '0.3s', // default: '0.3s'
-            mixColor: '#fff', // default: '#fff'
-            backgroundColor: '#fff',  // default: '#fff'
-            buttonColorDark: '#100f2c',  // default: '#100f2c'
-            buttonColorLight: '#fff', // default: '#fff'
-            saveInCookies: true, // default: true,
-            label: '🌓', // default: ''
-            autoMatchOsTheme: true // default: true
-        }
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+        <script>
+            function addDarkmodeWidget() {
+                new Darkmode().showWidget();
+            }
+            window.addEventListener('load', addDarkmodeWidget);
+        </script>
+        <script>
+            const options = {
+                bottom: '64px', // default: '32px'
+                right: 'unset', // default: '32px'
+                left: '32px', // default: 'unset'
+                time: '0.3s', // default: '0.3s'
+                mixColor: '#fff', // default: '#fff'
+                backgroundColor: '#fff',  // default: '#fff'
+                buttonColorDark: '#100f2c',  // default: '#100f2c'
+                buttonColorLight: '#fff', // default: '#fff'
+                saveInCookies: true, // default: true,
+                label: '🌓', // default: ''
+                autoMatchOsTheme: true // default: true
+            }
 
-        const darkmode = new Darkmode(options);
-        darkmode.showWidget();
-    </script>
-    <footer>
-        <br><hr id="divider1"><br>
-        <a id="back-to-top" href="#top">Back to Top</a>
-        <br>
-        <!-- Copywrite Tags and links for the Terms of Use and Privacy Policy page links-->
-        <h3 class="copywrite">&copy; SC - Team 2<br />2022</h3>
-        <a href="terms-of-use.html">Terms of Use</a> | <a href="privacy-policy.html">Privacy Policy</a>
-    </footer>
+            const darkmode = new Darkmode(options);
+            darkmode.showWidget();
+        </script>
+        <footer>
+            <br><hr id="divider1"><br>
+            <a id="back-to-top" href="#top">Back to Top</a>
+            <br>
+            <!-- Copywrite Tags and links for the Terms of Use and Privacy Policy page links-->
+            <h3 class="copywrite">&copy; SC - Team 2<br />2022</h3>
+            <a href="terms-of-use.html">Terms of Use</a> | <a href="privacy-policy.html">Privacy Policy</a>
+        </footer>
     </div> <!-- End of wrapper section -->
 </main> <!-- End of main section -->
 </html>

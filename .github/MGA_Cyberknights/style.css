@@ -127,7 +127,7 @@ header {
 
 /* header image style
 ================================================== */
-#KnightsLogo {
+.KnightsLogo {
     max-height: 260px;
     float: left;
     margin-right: 15px;

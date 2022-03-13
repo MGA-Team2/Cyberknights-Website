@@ -280,10 +280,10 @@ hr {
     margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
-    margin-left: auto;
-    margin-right: auto;
+    margin: -2em;
     border-radius: 8px;
-    postion: relative;
+    postion: center;
+    z-index: 1;
 	
 }
 

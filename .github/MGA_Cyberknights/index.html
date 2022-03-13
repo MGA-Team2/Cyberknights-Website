@@ -1,0 +1,190 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<!-- Start of head section -->
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8" />
+    <title>MGA Cyberknights | Home</title>
+    <!-- Font section -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap" rel="stylesheet">
+    <!-- Mobile Specific -->
+    <meta name="description" content="MGA Cyberknights - Student-led Cybersecurity Organization at Middle Georgia State University">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <!-- Favicon section -->
+    <link rel="icon" href="favicon.ico">
+    <!-- StyleSheet Reference section -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="style.css" rel="stylesheet" />
+    <link rel="javascript" href="Darkmode.js"/>
+    <!-- Script for potential IE user -->
+    <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head> <!-- End of head section -->
+<!-- Tag for Top of Page Link -->
+<a id="top"></a>
+<header>
+    <div class="headerContent">
+        <img id="KnightsLogo" src="images/CyberknightsLogo.png" alt="MGA Cyberknights Logo" />
+        </a>
+        <h1>
+            MGA
+        </h1>
+        <br />
+        <h1>
+            Cyberknights
+        </h1>
+
+    </div>
+</header>
+<!-- Start of navbar section -->
+<div class="navbar">
+    <!--Home Page-->
+    <a id="homeBtn" href="index.html">Home</a>
+    <div class="subnav">
+        <button class="subnavbtn">
+            <!--Events subnav section-->
+            Events <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="subnav-content">
+            <a href="calendar.html">Calendar</a>
+            |
+            <a href="event-highlights.html">Event Highlights</a>
+        </div>
+    </div> <!-- End of Events subnav section -->
+    <div class="subnav">
+        <!--Training subnav section-->
+        <button class="subnavbtn">
+            Training <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="subnav-content">
+            <a href="ctf-training.html">CTF Challenges</a>
+            |
+            <a href="the-armory.html">The Armory</a>
+        </div>
+    </div> <!-- End of Training subnav section -->
+    <div class="subnav">
+        <!--About Us subnav section-->
+        <button class="subnavbtn">
+            About Us <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="subnav-content">
+            <a href="about-us.html">About Us</a>
+            |
+            <a href="membership.html">Membership</a>
+        </div>
+    </div> <!-- End of Training subnav section -->
+    <div class="subnav">
+        <!--Contact Us subnav section-->
+        <div class="subnav">
+            <!--Contact Us subnav section-->
+            <a id="homeBtn" href="contact-us.html">Contact Us</a>
+      
+        </div> <!-- End of Contact Us subnav section -->
+    </div> <!-- End of Contact Us subnav section -->
+</div> <!-- End of navbar section -->
+<!-- Start of main section -->
+<main>
+    <!-- Start of wrapper section -->
+    <div class="wrapper">
+        <!-- Start of pageContent section -->
+        <div class="pageContent">
+            <!-- TEAM2 NOTES== Insert all page content within this section -->
+            <br />
+            <h1>
+                Welcome to the 
+                <a id="home_title_sub">
+                    MGA Cyberknights
+                </a>
+            </h1>
+            <!-- Slideshow container -->
+            <div class="slideshow">
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                    <img class="my-slides w3-animate-fading" src="images/meetings/698059_cyberknights2017.jpeg" alt="Cyberknights Meeting Photo 1">
+                    <img class="my-slides w3-animate-fading" src="images/meetings/805154_cyberknights2015a.jpeg" alt="Cyberknights Meeting Photo 2">
+                    <img class="my-slides w3-animate-fading" src="images/meetings/MGA-Cyber-Knights-web.jpeg" alt="Cyberknights Meeting Photo 3">
+                </div>
+            </div>
+            <br>
+            <p class="tab">
+                The MGA Cyberknights are a student and alumni-led organization formed to further students’ understanding of Cybersecurity 
+                concepts and represent MGA in national and international cyber-related competitions.
+            </p>
+            <button class="page_button">
+                <a href="about-us.html">LEARN MORE</a>
+            </button>
+            <br />
+            <p>
+                As it stands right now, the two main title header tags, h1 and h2, the h1 tag is set to be a centered
+                title, while the h2 tag is the same size, but it is left-aligned.
+            </p>
+            <br />
+            <h1>Example h1 tag</h1>
+            <h2>Example h2 tag</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Pellentesque pretium tortor non ornare venenatis.
+                Morbi imperdiet facilisis commodo.
+                Fusce efficitur tortor odio, pellentesque pellentesque neque ornare a.
+            </p>
+            <br />
+        </div> <!-- End of pageContent section -->
+    <!--Start of script section-->    
+    <script>
+            var myIndex = 0;
+            carousel();
+
+            function carousel() {
+                var i;
+                var x = document.getElementsByClassName("my-slides");
+                for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";
+                }
+                myIndex++;
+                if (myIndex > x.length) { myIndex = 1 }
+                x[myIndex - 1].style.display = "block";
+                setTimeout(carousel, 10000); // Change image every 2 seconds
+            }
+        </script>
+        <footer>
+            <br><hr id="divider1"><br>
+            <a id="back-to-top" href="#top">Back to Top</a>
+            <br>
+            <!-- Copywrite Tags and links for the Terms of Use and Privacy Policy page links-->
+            <h3 class="copywrite">&copy; SC - Team 2<br />2022</h3>
+            <a href="terms-of-use.html">Terms of Use</a> | <a href="privacy-policy.html">Privacy Policy</a>
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+            <script>
+            function addDarkmodeWidget() {
+            new Darkmode().showWidget();
+            }
+            window.addEventListener('load', addDarkmodeWidget);
+            </script>
+        <script>
+            const options = {
+            bottom: '64px', // default: '32px'
+            right: 'unset', // default: '32px'
+            left: '32px', // default: 'unset'
+            time: '0.3s', // default: '0.3s'
+            mixColor: '#fff', // default: '#fff'
+            backgroundColor: '#fff',  // default: '#fff'
+            buttonColorDark: '#100f2c',  // default: '#100f2c'
+            buttonColorLight: '#fff', // default: '#fff'
+            saveInCookies: true, // default: true,
+            label: '🌓', // default: ''
+            autoMatchOsTheme: true // default: true
+            }
+
+            const darkmode = new Darkmode(options);
+            darkmode.showWidget();
+            </script>
+    </div> <!-- End of wrapper section -->
+</main> <!-- End of main section -->
+</html>

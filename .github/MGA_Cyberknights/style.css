@@ -139,7 +139,6 @@ header {
 /* navbar section style  
 ================================================== */
 .navbar {
-    background-color: #f1f1f1;
     position: sticky;
     width: 100%;
     text-align: center;
@@ -334,7 +333,6 @@ hr {
     text-align: center;
     font-weight: 900;
     font-size: 1.7em;
-    color: #633394;
     text-decoration: none;
     color: black;
     text-shadow: 2px 2px #369019;

@@ -362,6 +362,9 @@ hr {
     display: block;
 }
 
+#Home_Armory_Title {
+    text-align:center;
+}
 
 /* calendar tab page styles */
 .calendar {

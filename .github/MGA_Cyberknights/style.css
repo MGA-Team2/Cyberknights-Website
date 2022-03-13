@@ -66,7 +66,7 @@ iframe {
 ================================================== */
 
 :root {
-    --gradiant: linear-gradient( 45deg, #369019, #D7D7D8, #A8A9AD, #633394 )
+    --gradiant: linear-gradient( 0deg, #369019, #D7D7D8, #A8A9AD, #633394 )
 }
 
 body {
@@ -120,7 +120,7 @@ header {
     padding-bottom: 15px;
     background-image: var(--gradiant);
     background-size: 300%;
-    animation: bg-animation 1s infinite alternate;
+    animation: bg-animation 15s infinite alternate;
     
 }
 

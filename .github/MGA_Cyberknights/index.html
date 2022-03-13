@@ -19,7 +19,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="style.css" rel="stylesheet" />
-    
+
     <!-- Script for potential IE user -->
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -84,7 +84,7 @@
         <div class="subnav">
             <!--Contact Us subnav section-->
             <a id="homeBtn" href="contact-us.html">Contact Us</a>
-      
+
         </div> <!-- End of Contact Us subnav section -->
     </div> <!-- End of Contact Us subnav section -->
 </div> <!-- End of navbar section -->
@@ -99,16 +99,16 @@
             <div id="Home_Slideshow_About_Sec">
                 <h1>
                     Welcome to the
-                    <a class="Home_Title_Sub">
+                    <a class="Home_Title" href="about-us.html">
                         MGA Cyberknights
                     </a>
                 </h1>
                 <!-- Slideshow container -->
                 <div class="slideshow">
                     <div class="mySlides fade">
-                        <img class="my-slides w3-animate-fading" src="images/meetings/698059_cyberknights2017.jpeg" alt="Cyberknights Meeting Photo 1">
-                        <img class="my-slides w3-animate-fading" src="images/meetings/805154_cyberknights2015a.jpeg" alt="Cyberknights Meeting Photo 2">
-                        <img class="my-slides w3-animate-fading" src="images/meetings/MGA-Cyber-Knights-web.jpeg" alt="Cyberknights Meeting Photo 3">
+                        <img class="my-slides w3-animate-fading" href="about-us.html" src="images/meetings/698059_cyberknights2017.jpeg" alt="Cyberknights Meeting Photo 1">
+                        <img class="my-slides w3-animate-fading" href="about-us.html" src="images/meetings/805154_cyberknights2015a.jpeg" alt="Cyberknights Meeting Photo 2">
+                        <img class="my-slides w3-animate-fading" href="about-us.html" src="images/meetings/MGA-Cyber-Knights-web.jpeg" alt="Cyberknights Meeting Photo 3">
                     </div>
                 </div>
                 <br>
@@ -121,21 +121,21 @@
             </div>
             <!-- Current or Upcoming Events page link section -->
             <div id="Home_Calendar_Sec">
-                <a class="Home_Title">Current or Upcoming Events</a>
+                <a class="Home_Title" href="calendar.html">Current or Upcoming Events</a>
                 <!-- Purple calendar clipart, floated left of below calendar description -->
                 <img class="clipart" id="Home_Calendar_Clipart" src="images/calendar-icon-purple.png" alt="Calendar Clipart" />
                 <p class="tab">
                     Stay up to date on any current or upcoming events!
                     The Calendar will keep you informed regarding meetings, Capture the Flag Challenges, or any other special events.
-                    Plus, if you want to learn more about some of the results and highlights from past events 
+                    Plus, if you want to learn more about some of the results and highlights from past events
                     or challenges, navigate to the Event Highlights page!
                 </p>
             </div> <!-- End of Home_Calendar_Sec div -->
             <!-- CTF Challenge Training page link section -->
             <div id="Home_CTF_Training_Sec">
-                <h1 href="ctf-training.html">
+                <a class="Home_Title" href="ctf-training.html">
                     Capture the Flag Challenges
-                </h1>
+                </a>
                 <!-- CTF Challenge Clipart, floated left of below CTF Training description -->
                 <img class="clipart" id="Home_CTF_Spaceman" src="images/ctf_spaceman.png" alt="CTF Spaceman Clipart" />
                 <p class="tab">
@@ -193,32 +193,32 @@
             <a href="contact-us.html">CONTACT US</a>
         </button>
     </div> <!-- End of pageContent section -->
-    <!--Start of script section-->    
+    <!--Start of script section-->
     <script>
-            var myIndex = 0;
-            carousel();
+        var myIndex = 0;
+        carousel();
 
-            function carousel() {
-                var i;
-                var x = document.getElementsByClassName("my-slides");
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                myIndex++;
-                if (myIndex > x.length) { myIndex = 1 }
-                x[myIndex - 1].style.display = "block";
-                setTimeout(carousel, 10000); // Change image every 2 seconds
+        function carousel() {
+            var i;
+            var x = document.getElementsByClassName("my-slides");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
             }
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-            <script>
-            function addDarkmodeWidget() {
+            myIndex++;
+            if (myIndex > x.length) { myIndex = 1 }
+            x[myIndex - 1].style.display = "block";
+            setTimeout(carousel, 10000); // Change image every 2 seconds
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+        function addDarkmodeWidget() {
             new Darkmode().showWidget();
-            }
-            window.addEventListener('load', addDarkmodeWidget);
-            </script>
-            <script>
-            const options = {
+        }
+        window.addEventListener('load', addDarkmodeWidget);
+    </script>
+    <script>
+        const options = {
             bottom: '64px', // default: '32px'
             right: 'unset', // default: '32px'
             left: '32px', // default: 'unset'
@@ -230,19 +230,19 @@
             saveInCookies: true, // default: true,
             label: '🌓', // default: ''
             autoMatchOsTheme: true // default: true
-            }
+        }
 
-            const darkmode = new Darkmode(options);
-            darkmode.showWidget();
-            </script>
-        <footer>
-            <br><hr id="divider1"><br>
-            <a id="back-to-top" href="#top">Back to Top</a>
-            <br>
-            <!-- Copywrite Tags and links for the Terms of Use and Privacy Policy page links-->
-            <h3 class="copywrite">&copy; SC - Team 2<br />2022</h3>
-            <a href="terms-of-use.html">Terms of Use</a> | <a href="privacy-policy.html">Privacy Policy</a>
-        </footer>
+        const darkmode = new Darkmode(options);
+        darkmode.showWidget();
+    </script>
+    <footer>
+        <br><hr id="divider1"><br>
+        <a id="back-to-top" href="#top">Back to Top</a>
+        <br>
+        <!-- Copywrite Tags and links for the Terms of Use and Privacy Policy page links-->
+        <h3 class="copywrite">&copy; SC - Team 2<br />2022</h3>
+        <a href="terms-of-use.html">Terms of Use</a> | <a href="privacy-policy.html">Privacy Policy</a>
+    </footer>
     </div> <!-- End of wrapper section -->
 </main> <!-- End of main section -->
 </html>

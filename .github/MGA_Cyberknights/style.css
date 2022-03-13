@@ -272,6 +272,8 @@ hr {
     margin: 0;
     font-size: 45px;
     text-align: center;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .page_button {

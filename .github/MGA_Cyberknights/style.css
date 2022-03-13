@@ -308,7 +308,7 @@ hr {
 
     .page_button:hover {
         background: linear-gradient(white 0%, #808080 100%);
-        color: #ff8989;
+        color: #5b5b5b;
         text-decoration: none;
         text-align: center;
         text-shadow: 2px 2px #369019;

@@ -271,6 +271,7 @@ hr {
     text-shadow: 2px 2px #369019;
     margin: 0;
     font-size: 45px;
+    text-align: center;
 }
 
 .page_button {
@@ -362,8 +363,9 @@ hr {
     display: block;
 }
 
-#Home_Armory_Title {
+.Home_Page_Title {
     text-align:center;
+    font-size: 1.7em;
 }
 
 /* calendar tab page styles */

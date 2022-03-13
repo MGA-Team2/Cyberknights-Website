@@ -79,7 +79,12 @@ body {
     background-color: white;
     font-weight: bold;
 }
-
+/* Dark Mode
+================================================== */
+.dark-mode {
+  background-color: black;
+  color: white;
+}
 
 /* header style 
 ================================================== */

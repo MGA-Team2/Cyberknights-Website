@@ -272,18 +272,17 @@ hr {
     border: 6px solid black;
     color: black;
     text-shadow: 2px 2px rgba(0, 0, 0, 0.2);
-    padding: 16px 16px;
+    padding: 16px 32px;
     text-align: center;
     text-decoration: none;
     display: block;
     font-size: 25px;
-    margin: 2px 2px;
+    margin: 4px 2px;
     transition-duration: 0.4s;
     cursor: pointer;
     margin-left: auto;
     margin-right:auto;
-    border-radius: 8px;
-    position: center
+    border-radius: 4px;
 }
 
 .page_button:hover {

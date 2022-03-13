@@ -49,10 +49,12 @@ iframe {
     margin: auto;
 }
 
+
 /* Indention class */
 .tab {
     text-indent: 40px;
 }
+
 
 /* Photo class style */
 .photo-shadow {
@@ -74,8 +76,8 @@ body {
     font-family: 'Roboto Serif', sans-serif;
     background-color: white;
     font-weight: bold;
-
 }
+
 
 /* Gradiant Background Animation style */
 @keyframes bg-animation {
@@ -87,7 +89,6 @@ body {
         background-position: right;
     }
 }
-
 
 .text-center {
     text-align: center;
@@ -104,15 +105,15 @@ header {
 }
 
 .Header_Text {
-        font-size: 65px;
-        font-family: 'Roboto Serif', sans-serif;
-        margin: 0;
-        font-weight: bold;
-        padding-top: 15px;
-        padding-right: 25%;
-        padding-left: 5%;
-        text-shadow: 3px 3px #369019;
-    }
+    font-size: 65px;
+    font-family: 'Roboto Serif', sans-serif;
+    margin: 0;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-right: 25%;
+    padding-left: 5%;
+    text-shadow: 3px 3px #369019;
+}
 
 .headerContent {
     width: 100%;
@@ -121,8 +122,8 @@ header {
     background-image: var(--gradiant);
     background-size: 300%;
     animation: bg-animation 15s infinite alternate;
-    
 }
+
 
 /* header image style
 ================================================== */
@@ -174,6 +175,7 @@ header {
     text-shadow: 3px 3px #633394;
 }
 
+
 /* subnav section style  
 ================================================== */
 .subnav {
@@ -217,6 +219,7 @@ header {
     display: block;
 }
 
+
 /* Page Wrapper Style 
 ================================================== */
 .wrapper {
@@ -229,6 +232,7 @@ header {
     font-family: 'Roboto Serif', sans-serif;
     font-weight: bold;
 }
+
 
 /* footer styles
 ================================================== */
@@ -244,6 +248,7 @@ footer {
         text-shadow: 1px 1px #633394;
     }
 
+
 /* Style for "divider1" at the top of the footer */
 hr {
     border-top: 4px solid black;
@@ -253,7 +258,6 @@ hr {
 
 
 /* Home page styles */
-
 .Home_Title {
     font-family: 'Roboto Serif', sans-serif;
     font-weight: bold;
@@ -264,6 +268,22 @@ hr {
     text-align: center;
     margin-right: auto;
     margin-left: auto;
+}
+
+.my-slides {
+    display: none;
+    width: 100%;
+}
+
+.slideshow {
+    max-width: 600px;
+    min-width: 600px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+    border: solid 12px #633394;
+    border-radius: 8px;
 }
 
 .page_button {
@@ -336,10 +356,6 @@ hr {
     display: block;
 }
 
-.Home_Page_Title {
-    text-align:center;
-    font-size: 1.7em;
-}
 
 /* calendar tab page styles */
 .calendar {
@@ -347,6 +363,7 @@ hr {
     border-radius: 8px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
 }
+
 
 /* CTF page styles */
 .CTF-list {
@@ -390,7 +407,6 @@ hr {
     font-style: normal;
 }
 
-
 .metasploit-title {
     font-size: 1.5em;
     font-weight: bold;
@@ -408,41 +424,17 @@ hr {
 }
 
 
-/* about us tab page styles */
-
 /*Membership tab page styles*/
 .prop2 {
     width: 20%;
 }
+
 
 /* contact us tab page styles */
 .contact-content {
     text-align: center;
     font-weight: normal;
 }
-
-/* Slideshow container */
-
-.my-slides {
-    display: none;
-    width: 100%;
-}
-
-.slideshow {
-    max-width: 600px;
-    min-width: 600px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
-    border: solid 12px #633394;
-    border-radius: 8px;
-}
-
-/* 
-    TEAM2 NOTES== I am adding in the section below for a placeholder; once we complete the design phase and start testing, we need to determine
-    what this section with encompass
-*/
 
 /*@Media Styles 
 ================================================== */

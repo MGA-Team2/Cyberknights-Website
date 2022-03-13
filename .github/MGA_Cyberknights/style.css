@@ -264,7 +264,7 @@ hr {
 
 /* Home page styles */
 
-.Home_Title_Sub {
+.Home_Title {
     font-family: 'Roboto Serif', sans-serif;
     font-weight: bold;
     color: black;
@@ -300,26 +300,6 @@ hr {
         text-shadow: 2px 2px #369019;
         box-shadow: none;
     }
-
-.Home_Two_Buttons {
-    margin-left: 25%;
-}
-
-    .Home_Two_Buttons::after {
-        content: "";
-        display: block;
-        clear: both;
-    }
-
-#calendar-button {
-    float: left;
-    border-right: 3px solid black;
-}
-
-#event-highlight-button {
-    float: left;
-    border-left: 3px solid black;
-}
 
 .clipart {
     float: left;

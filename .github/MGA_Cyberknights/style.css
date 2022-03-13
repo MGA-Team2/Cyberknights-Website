@@ -250,10 +250,6 @@ hr {
     width: 100%;
     margin: 0 auto;
 }
-/* 
-    TEAM2 NOTES== If we need to add more styles for a certain page, 
-    add a new comment section such as the above sections 
-*/
 
 
 /* Home page styles */
@@ -291,8 +287,8 @@ hr {
 }
 
     .page_button:hover {
-        background: linear-gradient(#633394 0%, #c9ced1 100%);
-        color: #f2f2f2;
+        background: linear-gradient(white 0%, #808080 100%);
+        color: #ff8989;
         text-decoration: none;
         text-align: center;
         text-shadow: 2px 2px #369019;

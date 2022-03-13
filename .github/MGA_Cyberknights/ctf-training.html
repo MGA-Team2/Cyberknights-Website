@@ -89,25 +89,34 @@
     <!-- Start of wrapper section -->
         <div class="wrapper">
         <!-- Start of pageContent section -->
-            <div class="pageContent">
+<div class="pageContent">
             <!-- TEAM2 NOTES== Insert all page content within this section -->
             <br /><br />
-                  <h1>
-                      Capture the Flag Training
-                  </h1>
-                  <p class="tab">
-                      Capture the Flag (CTF) is a computer security exercise where there is a "Flag"  secretly hidden within
-                      a purposely vulnerable program or website. The objective is to steal the flag from other competitors in
-                      an attack/defense style CTF or from the organizors in a jeopardy-style challenge.
-                  </p>
-                  <p class="tab">
-                      CTF competitions are a fun way to advance, challenge, and prove your cybersecurity skills. You can
-                      compete individualy or as a team. CTF problems are asked in job interviews to test the skills of professionals.
-                      So, competing in CTF competitions may prepare you for cybersecurity job interviews as well.
-                  </p>
+            <img id="HTP_Img" src="images/HTP-CTF.png" alt="CTF image" />
+            <br />
+            <h1>
+                Capture the Flag Training
+            </h1>
+            <p class="tab">
+                In short, Capture the Flag (CTF) is a computer security exercise where there is a "Flag"  secretly hidden within
+                a purposely vulnerable program or website. The objective is to steal the flag from other competitors in
+                an attack/defense style CTF or from the organizors in a jeopardy-style challenge.
+            </p>
+            <p class="tab">
+                CTF competitions are a fun way to advance, challenge, and prove your cybersecurity skills. You can
+                compete individualy or as a team. CTF problems are asked in job interviews to test the skills of professionals.
+                So, competing in CTF competitions may prepare you for cybersecurity job interviews as well.
+            </p>
+            <p class="tab">
+                For a more detailed explenation, with examples, watch this video below to go deeper into what CTF Challenges are
+                and what one may experience when trying to complete an excercise.
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8ev9ZX9J45A" title="YouTube video player"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
             <br />
             <h1>CTF Training Links</h1>
-           
+
             <p class="tab">
                 There are numerous places you can visit for Capture the Flag training. A very popular one that we like to use is
                 <a href="https://www.hackthebox.com/">HACKTHEBOX</a>. Here you can start your CTF training or just jump straight in to some of
@@ -119,10 +128,25 @@
                     <li><a href="https://microcorruption.com/login">MicroCorruption</a></li>
                     <li><a href="http://studentweb.mga.edu/tyler.rasmussen/CTF/">Tyler Rasmussen's CTF Challenge</a></li>
                     <li><a href="https://www.hacksplaining.com/">Hacksplaining</a></li>
+                    <li><a href="https://tryhackme.com/room/basicpente...">TryHackMe Basic Pentesting</a></li>
+                    <li><a href="https://app.hackthebox.com/starting-point">HackTheBox Starting Point</a></li>
+                    <li><a href="https://overthewire.org/wargames/bandit/">OverTheWire Bandit Series</li>
+                    <li><a href="https://cryptohack.org/challenges/web/">CryptoHack Crypto on the Web</a></li>
+                    <li><a href="https://picoctf.org/index#picogym">Pico CTF</a></li>
+                    <li><a href="https://ctfacademy.github.io/network/challenge1/index.htm">CTF Academy Network Forensics</a></li>
                 </ul>
             </p>
-            <br />
-        </div> 
+            <p class="tab">
+                If you would like to go past reading about CTF Challenges, here is a quick video to reference for some of the best
+                Beginner to Intermediate CTF Challenges to get started!
+            </p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/rHSmFKU4s9I" title="YouTube video player"
+                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+            <p class="text-center">
+                (All of the sites mentioned in the video are linked above for ease-of-access)
+            </p>
+        </div>
             <footer>
                 <br><hr id="divider1"><br>
                 <a id="back-to-top" href="#top">Back to Top</a>
@@ -131,6 +155,31 @@
                 <h3 class="copywrite">&copy; SC - Team 2<br />2022</h3>
                 <a href="terms-of-use.html">Terms of Use</a> | <a href="privacy-policy.html">Privacy Policy</a>
             </footer>
+        		<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+            <script>
+            function addDarkmodeWidget() {
+            new Darkmode().showWidget();
+            }
+            window.addEventListener('load', addDarkmodeWidget);
+            </script>
+        	<script>
+            const options = {
+            bottom: '64px', // default: '32px'
+            right: 'unset', // default: '32px'
+            left: '32px', // default: 'unset'
+            time: '0.3s', // default: '0.3s'
+            mixColor: '#fff', // default: '#fff'
+            backgroundColor: '#fff',  // default: '#fff'
+            buttonColorDark: '#100f2c',  // default: '#100f2c'
+            buttonColorLight: '#fff', // default: '#fff'
+            saveInCookies: true, // default: true,
+            label: '🌓', // default: ''
+            autoMatchOsTheme: true // default: true
+            }
+
+            const darkmode = new Darkmode(options);
+            darkmode.showWidget();
+            </script>
         </div> <!-- End of wrapper section -->
     </main> <!-- End of main section -->
 </html>

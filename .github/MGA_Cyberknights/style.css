@@ -283,7 +283,8 @@ hr {
     margin-left: auto;
     margin-right: auto;
     border-radius: 8px;
-    width: 150px;
+    width: 250px;
+    height: 250px;
 }
 
 .page_button:hover {

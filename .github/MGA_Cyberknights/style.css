@@ -120,7 +120,7 @@ header {
     padding-bottom: 15px;
     background-image: var(--gradiant);
     background-size: 300%;
-    animation: bg-animation 20s infinite alternate;
+    animation: bg-animation 1s infinite alternate;
     
 }
 

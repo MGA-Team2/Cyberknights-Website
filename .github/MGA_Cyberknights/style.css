@@ -130,9 +130,18 @@ header {
 .KnightsLogo {
     max-height: 260px;
     float: left;
-    margin-right: 15px;
-    padding-left: 15%;
+    margin-right: 0px;
+    padding-left: 25%;
+    padding-right: 2%;
+    margin-top: 5px;
+}
+.MGATitle {
+    max-height: 200px;
+    float: left;
+    margin-right: 45px;
+    padding-left: 0%;
     padding-right: 5%;
+    padding-top: 30px;
     margin-top: 5px;
 }
 
@@ -269,6 +278,9 @@ hr {
     margin-right: auto;
     margin-left: auto;
 }
+
+
+
 
 .my-slides {
     display: none;

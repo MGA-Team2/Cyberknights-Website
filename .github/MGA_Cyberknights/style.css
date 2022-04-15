@@ -256,8 +256,15 @@ footer {
 }
 
 .footer_media img {
-    max-width: 10%;
+    
+}
 
+#mgaLogo {
+    max-width:10%;
+}
+
+#facebookLogo {
+    max-width: 10%;
 }
 
 

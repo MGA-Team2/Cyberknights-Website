@@ -251,6 +251,12 @@ footer {
     padding-bottom: 20px;
 }
 
+.footer_media {
+    max-width: 10%;
+
+}
+
+
     footer h3 {
         font-family: 'Roboto Serif', sans-serif;
         font-weight: bold;

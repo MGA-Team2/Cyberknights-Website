@@ -221,6 +221,7 @@ header {
     z-index: 1;
     border: 7px solid black;
     line-height: 30px;
+    padding: 20px 20px;
 }
 
     .subnav-content a {
@@ -246,6 +247,7 @@ header {
 
 .subnav:hover .subnav-content {
     display: block;
+    color: gray;
 }
 
 

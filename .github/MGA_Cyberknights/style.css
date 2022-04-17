@@ -230,6 +230,9 @@ header {
         text-shadow: 3px 3px black;
 
     }
+    .subnav-content a:hover {
+        color: gray;
+    }
 
 .subnav .subnavbtn {
     float: none;

@@ -217,7 +217,7 @@ header {
     display: none;
     position: absolute;
     left: 0;
-    background-color: #633394;
+    background-color: gray;
     z-index: 1;
     border: 7px solid black;
     line-height: 30px;
@@ -231,7 +231,7 @@ header {
 
     }
     .subnav-content a:hover {
-        color: gray;
+        color: black;
     }
 
 .subnav .subnavbtn {

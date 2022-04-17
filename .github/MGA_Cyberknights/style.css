@@ -48,6 +48,7 @@ iframe {
     display: block;
     margin: auto;
     isolation: isolate;
+    max-width: 70%;
 }
 
 
@@ -90,9 +91,13 @@ body {
         background-position: right;
     }
 }
-
+ 
 .text-center {
     text-align: center;
+}
+#msfvenom {
+    width: 100%;
+    
 }
 
 
@@ -136,6 +141,14 @@ header {
     padding-right: 2%;
     margin-top: 5px;
     max-width: 50%;
+}
+#KnightsLogo_Membership {
+    max-height: 260px;
+    float: left;
+    margin-right: 0px;
+    padding-left: 25%;
+    padding-right: 2%;
+    margin-top: 5px;
 }
 .MGATitle {
     max-height: 250px;
@@ -414,6 +427,7 @@ hr {
     border: solid 12px #633394;
     border-radius: 8px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+    width:85%;
 }
 
 
@@ -467,6 +481,6 @@ hr {
     font-family: 'Roboto Serif', sans-serif;
     font-weight: bold;
     font-size: 25px;
-
+}
 /*@Media Styles 
 ================================================== */

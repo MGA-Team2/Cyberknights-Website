@@ -169,6 +169,7 @@ header {
     text-align: center;
     text-decoration: none;
     padding: 25px 50px;
+	padding-bottom: 5px;
     line-height: 25px;
     border-radius: 4px;
     font-size: 1.6em;
@@ -197,7 +198,7 @@ header {
     line-height: 25px;
     border-radius: 4px;
     width:20%;
-    text-shadow: 2px 2px #633394;
+    text-shadow: 3px 3px #633394;
 }
 
 .menu-tab {
@@ -226,12 +227,13 @@ header {
     display: none;
     position: absolute;
     left: 0;
-    background-color: gray;
+    background-color: #633394;
     z-index: 1;
     border: 7px solid black;
     line-height: 30px;
     padding-bottom: 5px;
     padding-top: 5px;
+	text-shadow: 3px 3px black;
 }
 
     .subnav-content a {
@@ -242,6 +244,7 @@ header {
     }
     .subnav-content a:hover {
         color: black;
+		
     }
 
 .subnav .subnavbtn {
@@ -260,7 +263,7 @@ header {
 
 .subnav:hover .subnav-content {
     display: block;
-    color: gray;
+    
 }
 
 

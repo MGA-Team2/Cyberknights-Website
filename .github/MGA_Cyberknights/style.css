@@ -161,48 +161,57 @@ header {
     max-width: 40%;
 }
 
-
-/* navbar section style  
+/* Navbar Styles
 ================================================== */
-/*.navbar {
+.navbar {
     position: sticky;
     width: 100%;
     text-align: center;
     text-decoration: none;
-    padding: 15px;
-    font-size: 1.6em;
+    padding: 25px 50px;
     line-height: 25px;
     border-radius: 4px;
+    font-size: 1.6em;
     outline: 7px solid #633394;
     background-color: #2C2C2C;
     z-index: 99;
 }
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+}
 
-    .navbar a {
-        color: white;
-        text-align: center;
-        padding: 12px 12px;
-        text-decoration: none;
-        font-size: 1.6em;
-        line-height: 25px;
-        border-radius: 4px;
-        width: 20%;
-    }
+.navbar-links li {
+    list-style: none;
+    width: 100%;
+}
 
-.homeBtn {
+.navbar-links li a {
     color: white;
     text-align: center;
-    padding: 25px 50px;
+    padding: 12px 12px;
     text-decoration: none;
+    font-size: 1.6em;
     line-height: 25px;
     border-radius: 4px;
-    width: 20%;
-    text-shadow: 3px 3px #633394;
+    width:20%;
+    text-shadow: 2px 2px #633394;
 }
-*/
 
-/* subnav section style  
-================================================== */
+.menu-tab {
+    position: absolute;
+    padding: 6px;
+    justify-content:left;
+    display: none;
+    color: white;
+    text-decoration: none;
+    font-size: 1.6em;
+    padding-left: 20px;
+    text-shadow: 3px 3px #633394;
+    margin-left: 10px;
+}
 
 .subnav {
     float: none;
@@ -511,65 +520,17 @@ hr {
     border-radius: 10px;
 }
 
-.navbar {
-    position: sticky;
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
-    padding: 25px 50px;
-    line-height: 25px;
-    border-radius: 4px;
-    font-size: 1.6em;
-    outline: 7px solid #633394;
-    background-color: #2C2C2C;
-    z-index: 99;
-}
-.navbar-links ul {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    width: 100%;
-}
-
-.navbar-links li {
-    list-style: none;
-    width: 100%;
-}
-
-.navbar-links li a {
-    color: white;
-    text-align: center;
-    padding: 12px 12px;
-    text-decoration: none;
-    font-size: 1.6em;
-    line-height: 25px;
-    border-radius: 4px;
-    width:20%;
-    text-shadow: 2px 2px #633394;
-}
-
-.menu-tab {
-    position: absolute;
-    padding: 6px;
-    justify-content:left;
-    display: none;
-    color: white;
-    text-decoration: none;
-    font-size: 1.6em;
-    padding-left: 20px;
-    text-shadow: 3px 3px #633394;
-    margin-left: 10px;
-}
-
 @media (max-width: 950px) {
     .toggle-button {
         display: flex;
         max-width: 100%;
         flex-basis: 40%;
     }
+
     .navbar-links {
         display: none;
     }
+
     .navbar {
         flex-direction: column;
         align-items: flex-start;
@@ -580,14 +541,20 @@ hr {
         width: 100%;
         font-size: .8em;
     }
+
     .navbar-links li {
         text-align: center;
         padding:15px;
+        text-align: center;
     }
+
     .navbar-links li a {
         padding: .5rem 1rem;
+        text-align: center;
+        position: relative;
         
     }
+
     .navbar-links.active {
         display: flex;
     }

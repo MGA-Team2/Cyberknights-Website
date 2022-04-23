@@ -1,10 +1,10 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
 <!-- Start of head section -->
 <head>
-    <!-- Basic Page Needs -->
+    <!-- Basic page meeds -->
     <meta charset="utf-8" />
+    <!-- Title for top of page -->
     <title>MGA Cyberknights | Home</title>
     <!-- Font section -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,25 +18,26 @@
     <!-- StyleSheet Reference section -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Reference for "style.css" within current directory -->
     <link href="style.css" rel="stylesheet" />
 
-    <!-- Script for potential IE user -->
+    <!-- Script for potential IE user to prevent site not working on IE 9 -->
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
 </head> <!-- End of head section -->
 <!-- Tag for Top of Page Link -->
 <a id="top"></a>
 <header>
+    <!-- Header content including the logo and MGA Cyberknights title located at the top of each page -->
     <div class="headerContent">
         <img class="KnightsLogo" src="images/CyberknightsLogo.png" alt="MGA Cyberknights Logo" />
-        <img class="MGATitle" src="images/mgacyber.png" alt="MGATitle" />
-
+        <img class="MGATitle" src="images/mgacyber.png" alt="MGA Cyberknights" />
     </div>
-</header>
+</header> <!-- End of header section -->
 <!-- Start of navbar section -->
 <nav class="navbar">
+    <!-- Navbar page links -->
     <div class="menu-tab">Menu</div>
     <a href="#" class="toggle-button">
         <span class="bar"></span>
@@ -48,17 +49,19 @@
     <div class="navbar-links">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><div class="subnav">
-                <button class="subnavbtn">
-                    <!--Events subnav section-->
-                    Events <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="subnav-content">
-                    <a href="calendar.html"><img src="images/arrow-icon.png" alt="nav-arrow"/>Calendar</a>
-                    <br />
-                    <a href="event-highlights.html"><img src="images/arrow-icon.png" alt="nav-arrow" />Highlights</a>
-                </div>
-            </div> <!-- End of Events subnav section --></li>
+            <li>
+                <div class="subnav">
+                    <button class="subnavbtn">
+                        <!--Events subnav section-->
+                        Events <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="subnav-content">
+                        <a href="calendar.html"><img src="images/arrow-icon.png" alt="nav-arrow" />Calendar</a>
+                        <br />
+                        <a href="event-highlights.html"><img src="images/arrow-icon.png" alt="nav-arrow" />Highlights</a>
+                    </div>
+                </div> <!-- End of Events subnav section -->
+            </li>
             <li>
                 <div class="subnav">
                     <button class="subnavbtn">
@@ -85,7 +88,8 @@
                     </div>
                 </div>
             </li>
-            <li><a href="contact-us.html">Contact Us</a>
+            <li>
+                <a href="contact-us.html">Contact Us</a>
             </li>
         </ul>
     </div>
@@ -197,15 +201,14 @@
         <p class="text-center">
             Follow the School of Information Technology page on Facebook
         </p>
-        <iframe 
-                id="facebookEmbed" 
-                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmgainfotech&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" 
+        <iframe id="facebookEmbed"
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmgainfotech&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
                 width="340" height="500" style="overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
         </iframe>
         <br>
         <!-- Button link to associated page -->
         <a href="contact-us.html"><span class="page_button">Contact Us</span></a>
-        
+
         <!--Start of script section-->
         <script>
             var myIndex = 0;
@@ -229,11 +232,14 @@
             <br><hr id="divider1"><br>
             <a id="back-to-top" href="#top">Back to Top</a>
             <br>
-            <a href="https://www.facebook.com/mgainfotech" target="_blank"><span id="facebookLogo">
-                    <img src="images/facebook-logo.png"  alt="Facebook logo"></span></a>
+            <a href="https://www.facebook.com/mgainfotech" target="_blank">
+                <span id="facebookLogo">
+                    <img src="images/facebook-logo.png" alt="Facebook logo">
+                </span>
+            </a>
             </a>
             <a id="mgaLogo" href="https://www.mga.edu/index.php" target="_blank">
-                    <img src="images/logo.jpg" alt="MGA Logo">
+                <img src="images/logo.jpg" alt="MGA Logo">
             </a>
             <br />
             <a href="terms-of-use.html">Terms of Use</a> | <a href="privacy-policy.html">Privacy Policy</a>

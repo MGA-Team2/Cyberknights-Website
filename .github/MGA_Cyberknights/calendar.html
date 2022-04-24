@@ -1,10 +1,10 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
-    <!-- Start of head section -->
-    <head>
+<!-- Start of head section -->
+<head>
     <!-- Basic Page Needs -->
     <meta charset="utf-8" />
+    <!-- Title for top of page -->
     <title>MGA Cyberknights | Calendar</title>
     <!-- Font section -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,24 +18,26 @@
     <!-- StyleSheet Reference section -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Reference for "style.css" within current directory -->
     <link href="style.css" rel="stylesheet" />
+
     <!-- Script for potential IE user -->
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
 </head> <!-- End of head section -->
-    <!-- Tag for Top of Page Link -->
-    <a id="top"></a>
-    <header>
-        <div class="headerContent">
-            <img class="KnightsLogo" src="images/CyberknightsLogo.png" alt="MGA Cyberknights Logo" />
-            <img class="MGATitle" src="images/mgacyber.png" alt="MGATitle" />
-
-        </div>
-    </header>
-    <!-- Start of navbar section -->
+<!-- Tag for Top of Page Link -->
+<a id="top"></a>
+<header>
+    <!-- Header content including the logo and MGA Cyberknights title located at the top of each page -->
+    <div class="headerContent">
+        <img class="KnightsLogo" src="images/CyberknightsLogo.png" alt="MGA Cyberknights Logo" />
+        <img class="MGATitle" src="images/mgacyber.png" alt="MGA Cyberknights" />
+    </div>
+</header> <!-- End of header section -->
+<!-- Start of navbar section -->
 <nav class="navbar">
+    <!-- Code to help separate the navbar links -->
     <div class="menu-tab">Menu</div>
     <a href="#" class="toggle-button">
         <span class="bar"></span>
@@ -44,87 +46,101 @@
         <span class="bar"></span>
         <span class="bar"></span>
     </a>
+    <!-- Navbar page links -->
     <div class="navbar-links">
         <ul>
+            <!-- Home page link -->
             <li><a href="index.html">Home</a></li>
-            <li><div class="subnav">
-                <button class="subnavbtn">
-                    <!--Events subnav section-->
-                    Events <i class="fa fa-caret-down"></i>
-                </button>
-                <div class="subnav-content">
-                    <a href="calendar.html"><img src="images/arrow-icon.png" alt="nav-arrow"/>Calendar</a>
-                    <br />
-                    <a href="event-highlights.html"><img src="images/arrow-icon.png" alt="nav-arrow" />Highlights</a>
-                </div>
-            </div> <!-- End of Events subnav section --></li>
+            <!-- Events subnav section -->
             <li>
                 <div class="subnav">
                     <button class="subnavbtn">
-                        <!--Events subnav section-->
+                        Events <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="subnav-content">
+                        <!-- Calendar page link -->
+                        <a href="calendar.html"><img src="images/arrow-icon.png" alt="nav-arrow" />Calendar</a>
+                        <br />
+                        <!-- Event Highlights page link -->
+                        <a href="event-highlights.html"><img src="images/arrow-icon.png" alt="nav-arrow" />Highlights</a>
+                    </div>
+                </div>
+            </li> <!-- End of Events subnav section -->
+            <!-- Training subnav section -->
+            <li>
+                <div class="subnav">
+                    <button class="subnavbtn">
                         Training <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="subnav-content">
+                        <!-- CTF Challenges page link -->
                         <a href="ctf-training.html"><img src="images/arrow-icon.png" alt="nav-arrow" />CTF Challenges</a>
                         <br />
+                        <!-- The Armory page link -->
                         <a href="the-armory.html"><img src="images/arrow-icon.png" alt="nav-arrow" />The Armory</a>
                     </div>
                 </div>
-            </li>
+            </li> <!-- End of Training subnav section -->
+            <!-- About Us subnav section -->
             <li>
                 <div class="subnav">
-                    <!--About Us subnav section-->
                     <button class="subnavbtn">
                         About Us <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="subnav-content">
+                        <!-- About Us page link -->
                         <a href="about-us.html"><img src="images/arrow-icon.png" alt="nav-arrow" />About Us</a>
                         <br />
+                        <!-- Membership page link -->
                         <a href="membership.html"><img src="images/arrow-icon.png" alt="nav-arrow" />Membership</a>
                     </div>
                 </div>
-            </li>
-            <li><a href="contact-us.html">Contact Us</a>
-            </li>
-
+            </li> <!-- End of About Us subnav section -->
+            <!-- Contact Us page link -->
+            <li><a href="contact-us.html">Contact Us</a></li>
         </ul>
-    </div>
-</nav>
-    <!-- Start of main section -->
-    <main>
+    </div> <!-- End of Navbar page links -->
+</nav> <!-- End of navbar section -->
+<!-- Start of main section -->
+<main>
     <!-- Start of wrapper section -->
-        <div class="wrapper">
-            <!-- Start of pageContent section -->
-            <div class="pageContent">
-                <!-- TEAM2 NOTES== Insert all page content within this section -->
-                <br /><br />
-                <h1 id="calendar-title">
-                    Calendar
-                </h1>
-
-                <iframe class="calendar" src="https://calendar.google.com/calendar/embed?height=800&wkst=1&bgcolor=%23633394&ctz=America%2FNew_York&showTz=0&showCalendars=0&showDate=1&showNav=1&showTitle=1&showPrint=0&src=bWdhLmN5YmVya25pZ2h0c0BnbWFpbC5jb20&color=%23039BE5"
-                        width="800" height="600"></iframe>
-                <br />
-                <h1 class="tab">
-                    Current and upcoming events or meetings.
-                </h1>
-                <br />
-            </div> <!-- End of pageContent section -->
-            <footer>
-                <br><hr id="divider1"><br>
-                <a id="back-to-top" href="#top">Back to Top</a>
-                <br>
-                <a href="https://www.facebook.com/mgainfotech"><span id="facebookLogo">
-                    <img src="images/facebook-logo.png" target="_blank" alt="Facebook logo"></span></a>
+    <div class="wrapper">
+        <!-- Start of pageContent section -->
+        <div class="pageContent">
+            <br /><br />
+            <h1 id="calendar-title">
+                Calendar
+            </h1>
+            <!-- Google Calendar Embed from the MGA Cyberknights Google Account -->
+            <iframe class="calendar" src="https://calendar.google.com/calendar/embed?height=800&wkst=1&bgcolor=%23633394&ctz=America%2FNew_York&showTz=0&showCalendars=0&showDate=1&showNav=1&showTitle=1&showPrint=0&src=bWdhLmN5YmVya25pZ2h0c0BnbWFpbC5jb20&color=%23039BE5"
+                    width="800" height="600">
+            </iframe>
+            <br />
+            <h1 class="tab">
+                Current and upcoming events or meetings.
+            </h1>
+            <br />
+        </div> <!-- End of pageContent section -->
+        <!-- Start of footer -->
+        <footer>
+            <br><hr id="divider1"><br>
+            <!-- Link to bring user back-to-top of page -->
+            <a id="back-to-top" href="#top">Back to Top</a>
+            <br>
+            <!-- Link to the MGA School of Information technology Facebook page -->
+            <a href="https://www.facebook.com/mgainfotech" target="_blank">
+                <span id="facebookLogo">
+                    <img src="images/facebook-logo.png" alt="Facebook logo">
+                </span>
             </a>
+            <!-- Link to the official MGA website -->
             <a id="mgaLogo" href="https://www.mga.edu/index.php" target="_blank">
-                    <img src="images/logo.jpg" alt="MGA Logo">
+                <img src="images/logo.jpg" alt="MGA Logo">
             </a>
-                <br />
-                <a href="terms-of-use.html">Terms of Use</a> | <a href="privacy-policy.html">Privacy Policy</a>
-            </footer>
-            <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-            <script src="./Darkmode.js"></script>
-        </div> <!-- End of wrapper section -->
-    </main> <!-- End of main section -->
+            <br />
+            <!-- Link to the Terms-of-Use and the Privacy-Policy pages -->
+            <a href="terms-of-use.html">Terms of Use</a> | <a href="privacy-policy.html">Privacy Policy</a>
+        </footer> <!-- End of the footer-->
+    </div> <!-- End of wrapper section -->
+</main> <!-- End of main section -->
 </html>

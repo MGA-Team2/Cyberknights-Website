@@ -37,7 +37,7 @@
 </header> <!-- End of header section -->
 <!-- Start of navbar section -->
 <nav class="navbar">
-    <!-- Navbar page links -->
+    <!-- Code to help separate the navbar links -->
     <div class="menu-tab">Menu</div>
     <a href="#" class="toggle-button">
         <span class="bar"></span>
@@ -46,54 +46,61 @@
         <span class="bar"></span>
         <span class="bar"></span>
     </a>
+    <!-- Navbar page links -->
     <div class="navbar-links">
         <ul>
+            <!-- Home page link -->
             <li><a href="index.html">Home</a></li>
+            <!-- Events subnav section -->
             <li>
                 <div class="subnav">
                     <button class="subnavbtn">
-                        <!--Events subnav section-->
                         Events <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="subnav-content">
+                        <!-- Calendar page link -->
                         <a href="calendar.html"><img src="images/arrow-icon.png" alt="nav-arrow" />Calendar</a>
                         <br />
+                        <!-- Event Highlights page link -->
                         <a href="event-highlights.html"><img src="images/arrow-icon.png" alt="nav-arrow" />Highlights</a>
                     </div>
-                </div> <!-- End of Events subnav section -->
-            </li>
+                </div>
+            </li> <!-- End of Events subnav section -->
+            <!-- Training subnav section -->
             <li>
                 <div class="subnav">
                     <button class="subnavbtn">
-                        <!--Events subnav section-->
                         Training <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="subnav-content">
+                        <!-- CTF Challenges page link -->
                         <a href="ctf-training.html"><img src="images/arrow-icon.png" alt="nav-arrow" />CTF Challenges</a>
                         <br />
+                        <!-- The Armory page link -->
                         <a href="the-armory.html"><img src="images/arrow-icon.png" alt="nav-arrow" />The Armory</a>
                     </div>
                 </div>
-            </li>
+            </li> <!-- End of Training subnav section -->
+            <!-- About Us subnav section -->
             <li>
                 <div class="subnav">
-                    <!--About Us subnav section-->
                     <button class="subnavbtn">
                         About Us <i class="fa fa-caret-down"></i>
                     </button>
                     <div class="subnav-content">
+                        <!-- About Us page link -->
                         <a href="about-us.html"><img src="images/arrow-icon.png" alt="nav-arrow" />About Us</a>
                         <br />
+                        <!-- Membership page link -->
                         <a href="membership.html"><img src="images/arrow-icon.png" alt="nav-arrow" />Membership</a>
                     </div>
                 </div>
-            </li>
-            <li>
-                <a href="contact-us.html">Contact Us</a>
-            </li>
+            </li> <!-- End of About Us subnav section -->
+            <!-- Contact Us page link -->
+            <li><a href="contact-us.html">Contact Us</a></li>
         </ul>
-    </div>
-</nav>
+    </div> <!-- End of Navbar page links -->
+</nav> <!-- End of navbar section -->
 <!-- Start of main section -->
 <main>
     <!-- Start of wrapper section -->
@@ -102,6 +109,7 @@
         <div class="pageContent">
             <!-- TEAM2 NOTES== Insert all page content within this section -->
             <br />
+            <!-- First section of Home page: Home_Title, Slideshow, and brief description -->
             <div id="Home_About">
                 <h1>
                     Welcome to the
@@ -124,11 +132,11 @@
                     concepts and represent MGA in national and international cyber-related competitions.
                 </p>
                 <br />
-            </div>
+            </div> <!-- End of Home_About -->
             <!-- Current or Upcoming Events page link section -->
             <div id="Home_Calendar_Sec">
                 <a class="Home_Title" href="calendar.html">Current or Upcoming Events</a>
-                <!-- Purple calendar clipart, floated left of below calendar description -->
+                <!-- Purple calendar clipart -->
                 <img class="clipart" id="Home_Calendar_Clipart" src="images/calendar-icon-purple.png" alt="Calendar Clipart" />
                 <p class="tab">
                     Stay up to date on any current or upcoming events!
@@ -136,13 +144,13 @@
                     Plus, if you want to learn more about some of the results and highlights from past events
                     or challenges, navigate to the Event Highlights page!
                 </p>
-            </div> <!-- End of Home_Calendar_Sec div -->
+            </div> <!-- End of Upcoming Events page link section -->
             <!-- CTF Challenge Training page link section -->
             <div id="Home_CTF_Training_Sec">
                 <a class="Home_Title" href="ctf-training.html">
                     Capture the Flag Challenges
                 </a>
-                <!-- CTF Challenge Clipart, floated left of below CTF Training description -->
+                <!-- CTF Challenge Clipart -->
                 <img class="clipart" id="Home_CTF_Spaceman" src="images/ctf_spaceman.png" alt="CTF Spaceman Clipart" />
                 <p class="tab">
                     As mentioned above, the MGA Cyberknights take great pride in paticipating in and completing Capture the Flag Challenges.
@@ -150,9 +158,9 @@
                     in these challenges, check out the CTF Challenges page.
                 </p>
                 <!-- Button link to associated page -->
-            </div>
-            <!-- The Armory Training page link section -->
+            </div> <!-- End of CTF Challenge Training page link section -->
             <br>
+            <!-- The Armory Training page link section -->
             <div id="Home_Armory">
                 <a class="Home_Title" href="the-armory.html">The Armory</a>
                 <!-- The Armory Clipart, floated left of below The Armory description -->
@@ -165,10 +173,11 @@
                     We have aptly named that list The Armory.
                 </p>
                 <!-- Button link to associated page -->
-            </div>
-        </div>
+            </div> <!-- End of The Armory Training page link section -->
+        </div> <!-- End of pageContent-->
         <br />
         <hr />
+        <!-- Call to Action -->
         <div id="Home_Membership_Sec">
             <h1>
                 Join the MGA Cyberknights,
@@ -197,53 +206,62 @@
                 </p>
             </div>
             <a class="Home_CTA_Closer" href="membership.html">join the MGA Cyberknights</a>
-        </div>
-        <p class="text-center">
-            Follow the School of Information Technology page on Facebook
-        </p>
-        <iframe id="facebookEmbed"
-                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmgainfotech&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-                width="340" height="500" style="overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-        </iframe>
-        <br>
-        <!-- Button link to associated page -->
-        <a href="contact-us.html"><span class="page_button">Contact Us</span></a>
-
+        </div> <!-- End of Call to Action -->
+        <!-- Facebook Integration section-->
+        <div id="Facebook_Integration">
+            <p class="text-center">
+                Follow the School of Information Technology page on Facebook
+            </p>
+            <!-- Facebook embed of the MGA School of Information technology page -->
+            <iframe id="facebookEmbed"
+                    src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmgainfotech&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                    width="340" height="500" style="overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+            </iframe>
+            <br>
+            <!-- Button link to associated page -->
+            <a href="contact-us.html"><span class="page_button">Contact Us</span></a>
+        </div> <!-- End of Facebook Integration section -->
         <!--Start of script section-->
-        <script>
-            var myIndex = 0;
-            carousel();
+        <div class="scripts">
+            <script>
+                var myIndex = 0;
+                carousel();
 
-            function carousel() {
-                var i;
-                var x = document.getElementsByClassName("my-slides");
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("my-slides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) { myIndex = 1 }
+                    x[myIndex - 1].style.display = "block";
+                    setTimeout(carousel, 10000); // Change image every 2 seconds
                 }
-                myIndex++;
-                if (myIndex > x.length) { myIndex = 1 }
-                x[myIndex - 1].style.display = "block";
-                setTimeout(carousel, 10000); // Change image every 2 seconds
-            }
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
-        <script src="./Darkmode.js"></script>
+            </script> <!-- End of scripts section -->
+            <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+            <script src="./Darkmode.js"></script>
+        </div> <!-- End of script section -->
+        <!-- Start of footer -->
         <footer>
             <br><hr id="divider1"><br>
+            <!-- Link to bring user back-to-top of page -->
             <a id="back-to-top" href="#top">Back to Top</a>
             <br>
+            <!-- Link to the MGA School of Information technology Facebook page -->
             <a href="https://www.facebook.com/mgainfotech" target="_blank">
                 <span id="facebookLogo">
                     <img src="images/facebook-logo.png" alt="Facebook logo">
                 </span>
             </a>
-            </a>
+            <!-- Link to the official MGA website -->
             <a id="mgaLogo" href="https://www.mga.edu/index.php" target="_blank">
                 <img src="images/logo.jpg" alt="MGA Logo">
             </a>
             <br />
+            <!-- Link to the Terms-of-Use and the Privacy-Policy pages -->
             <a href="terms-of-use.html">Terms of Use</a> | <a href="privacy-policy.html">Privacy Policy</a>
-        </footer>
+        </footer> <!-- End of the footer-->
     </div> <!-- End of wrapper section -->
 </main> <!-- End of main section -->
 </html>

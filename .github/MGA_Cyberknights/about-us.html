@@ -1,10 +1,10 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
 <!-- Start of head section -->
 <head>
-    <!-- Basic Page Needs -->
+    <!-- Basic page meeds -->
     <meta charset="utf-8" />
+    <!-- Title for top of page -->
     <title>MGA Cyberknights | About Us</title>
     <!-- Font section -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,86 +18,101 @@
     <!-- StyleSheet Reference section -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Reference for "style.css" within current directory -->
     <link href="style.css" rel="stylesheet" />
-    <!-- Script for potential IE user -->
+
+    <!-- Script for potential IE user to prevent site not working on IE 9 -->
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
 </head> <!-- End of head section -->
 <!-- Tag for Top of Page Link -->
 <a id="top"></a>
 <header>
+    <!-- Header content including the logo and MGA Cyberknights title located at the top of each page -->
     <div class="headerContent">
-        <img id="KnightsLogo" src="images/CyberknightsLogo.png" alt="MGA Cyberknights Logo" />
-        </a>
-        <h1>
-            MGA
-        </h1>
-        <br />
-        <h1>
-            Cyberknights
-        </h1>
-
+        <img class="KnightsLogo" src="images/CyberknightsLogo.png" alt="MGA Cyberknights Logo" />
+        <img class="MGATitle" src="images/mgacyber.png" alt="MGA Cyberknights" />
     </div>
-</header>
+</header> <!-- End of header section -->
 <!-- Start of navbar section -->
-<div class="navbar">
-    <!--Home Page-->
-    <a id="homeBtn" href="index.html">Home</a>
-    <div class="subnav">
-        <button class="subnavbtn">
-            <!--Events subnav section-->
-            Events <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="subnav-content">
-            <a href="calendar.html">Calendar</a>
-            |
-            <a href="event-highlights.html">Event Highlights</a>
-        </div>
-    </div> <!-- End of Events subnav section -->
-    <div class="subnav">
-        <!--Training subnav section-->
-        <button class="subnavbtn">
-            Training <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="subnav-content">
-            <a href="ctf-training.html">CTF Challenges</a>
-            |
-            <a href="the-armory.html">The Armory</a>
-        </div>
-    </div> <!-- End of Training subnav section -->
-    <div class="subnav">
-        <!--About Us subnav section-->
-        <button class="subnavbtn">
-            About Us <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="subnav-content">
-            <a href="about-us.html">About Us</a>
-            |
-            <a href="membership.html">Membership</a>
-        </div>
-    </div> <!-- End of Training subnav section -->
-    <div class="subnav">
-        <!--Contact Us subnav section-->
-        <a id="homeBtn" href="contact-us.html">Contact Us</a>
-
-    </div> <!-- End of Contact Us subnav section -->
-</div> <!-- End of navbar section -->
+<nav class="navbar">
+    <!-- Code to help separate the navbar links -->
+    <div class="menu-tab">Menu</div>
+    <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </a>
+    <!-- Navbar page links -->
+    <div class="navbar-links">
+        <ul>
+            <!-- Home page link -->
+            <li><a href="index.html">Home</a></li>
+            <!-- Events subnav section -->
+            <li>
+                <div class="subnav">
+                    <button class="subnavbtn">
+                        Events <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="subnav-content">
+                        <!-- Calendar page link -->
+                        <a href="calendar.html"><img src="images/arrow-icon.png" alt="nav-arrow" />Calendar</a>
+                        <br />
+                        <!-- Event Highlights page link -->
+                        <a href="event-highlights.html"><img src="images/arrow-icon.png" alt="nav-arrow" />Highlights</a>
+                    </div>
+                </div>
+            </li> <!-- End of Events subnav section -->
+            <!-- Training subnav section -->
+            <li>
+                <div class="subnav">
+                    <button class="subnavbtn">
+                        Training <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="subnav-content">
+                        <!-- CTF Challenges page link -->
+                        <a href="ctf-training.html"><img src="images/arrow-icon.png" alt="nav-arrow" />CTF Challenges</a>
+                        <br />
+                        <!-- The Armory page link -->
+                        <a href="the-armory.html"><img src="images/arrow-icon.png" alt="nav-arrow" />The Armory</a>
+                    </div>
+                </div>
+            </li> <!-- End of Training subnav section -->
+            <!-- About Us subnav section -->
+            <li>
+                <div class="subnav">
+                    <button class="subnavbtn">
+                        About Us <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="subnav-content">
+                        <!-- About Us page link -->
+                        <a href="about-us.html"><img src="images/arrow-icon.png" alt="nav-arrow" />About Us</a>
+                        <br />
+                        <!-- Membership page link -->
+                        <a href="membership.html"><img src="images/arrow-icon.png" alt="nav-arrow" />Membership</a>
+                    </div>
+                </div>
+            </li> <!-- End of About Us subnav section -->
+            <!-- Contact Us page link -->
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </div> <!-- End of Navbar page links -->
+</nav> <!-- End of navbar section -->
 <!-- Start of main section -->
 <main>
     <!-- Start of wrapper section -->
     <div class="wrapper">
         <!-- Start of pageContent section -->
         <div class="pageContent">
-            <!-- TEAM2 NOTES== Insert all page content within this section -->
             <br /><br />
             <h1>About Us</h1>
             <h1>
                 <img class="photo-shadow" src="images/meetings/IMG_2329.jpg" alt="Cyberknights picture" width=900 height=450 />
             </h1>
             <br />
-
             <p class="tab">
                 The MGA Cyberknights is a student led organization with the purpose of furthering student's
                 understanding of Cybersecurity concepts and represent MGA in national and international cyber-related competitions.
@@ -108,50 +123,50 @@
             <p class="tab">
                 Cyberknights meetings usually consist of educational Cybersecurity and Cyber-CTF (Capture the Flag) related hands-on demonstrations and discussions.
             </p>
-            <!--
-            <h2>Meetings</h2> -->
-            <h3>
-                Meeting Information:
-            </h3>
-            <ul>
-                <li>
-                    Cyberknights meeting are held in room 257 at the PCS 250 building.
-                </li>
-                <li>
-                    Weekly meetings on Wednesday at 3pm.
-                </li>
-                <li>
-                    In person will still be PSC 250 and virtual will be on Discord as well.
-                </li>
-            </ul>
+            <!-- Current Meeting Info to be updated regularly-->
+            <div id="MeetingInfo">
+                <h3>
+                    Meeting Information:
+                </h3>
+                <ul>
+                    <li>
+                        Cyberknights meeting are held in room 257 at the PCS 250 building.
+                    </li>
+                    <li>
+                        Weekly meetings on Wednesday at 3pm.
+                    </li>
+                    <li>
+                        In person will still be PSC 250 and virtual will be on Discord as well.
+                    </li>
+                </ul>
+            </div>
             <br />
         </div> <!-- End of pageContent section -->
-        <!-- Start of Scripts for Page -->
-        <!--TEAM2 NOTES== This script is for the Home page slideshow; however, until the slideshow is finished, it will remain in comments.
-        <script>
-            var myIndex = 0;
-            carousel();
-
-            function carousel() {
-                var i;
-                var x = document.getElementsByClassName("my-slides");
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                myIndex++;
-                if (myIndex > x.length) { myIndex = 1 }
-                x[myIndex - 1].style.display = "block";
-                setTimeout(carousel, 2000); // Change image every 2 seconds
-            }
-        </script> -->
+        <!--Start of script section-->
+        <div class="scripts">
+            <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+            <script src="./Darkmode.js"></script>
+        </div> <!-- End of script section -->
+        <!-- Start of footer -->
         <footer>
             <br><hr id="divider1"><br>
+            <!-- Link to bring user back-to-top of page -->
             <a id="back-to-top" href="#top">Back to Top</a>
             <br>
-            <!-- Copywrite Tags and links for the Terms of Use and Privacy Policy page links-->
-            <h3 class="copywrite">&copy; SC - Team 2<br />2022</h3>
+            <!-- Link to the MGA School of Information technology Facebook page -->
+            <a href="https://www.facebook.com/mgainfotech" target="_blank">
+                <span id="facebookLogo">
+                    <img src="images/facebook-logo.png" alt="Facebook logo">
+                </span>
+            </a>
+            <!-- Link to the official MGA website -->
+            <a id="mgaLogo" href="https://www.mga.edu/index.php" target="_blank">
+                <img src="images/logo.jpg" alt="MGA Logo">
+            </a>
+            <br />
+            <!-- Link to the Terms-of-Use and the Privacy-Policy pages -->
             <a href="terms-of-use.html">Terms of Use</a> | <a href="privacy-policy.html">Privacy Policy</a>
-        </footer>
+        </footer> <!-- End of the footer-->
     </div> <!-- End of wrapper section -->
 </main> <!-- End of main section -->
 </html>

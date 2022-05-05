@@ -1,10 +1,10 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
-    <!-- Start of head section -->
-    <head>
+<!-- Start of head section -->
+<head>
     <!-- Basic Page Needs -->
     <meta charset="utf-8" />
+    <!-- Title for top of page -->
     <title>MGA Cyberknights | Event Highlights</title>
     <!-- Font section -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,162 +18,177 @@
     <!-- StyleSheet Reference section -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Reference for "style.css" within current directory -->
     <link href="style.css" rel="stylesheet" />
-    <!-- Script for potential IE user -->
+
+    <!-- Script for potential IE user to prevent site not working on IE 9 -->
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
 </head> <!-- End of head section -->
-    <!-- Tag for Top of Page Link -->
-    <a id="top"></a>
-    <header>
-        <div class="headerContent">
-            <img id="KnightsLogo" src="images/CyberknightsLogo.png" alt="MGA Cyberknights Logo" />
-            </a>
-            <h1>
-                MGA
-            </h1>
-            <br />
-            <h1>
-                Cyberknights
-            </h1>
-            
-        </div>
-    </header>
-    <!-- Start of navbar section -->
-    <div class="navbar">
-        <!--Home Page-->
-        <a id="homeBtn" href="index.html">Home</a>
-        <div class="subnav">
-            <button class="subnavbtn">
-                <!--Events subnav section-->
-                Events <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="subnav-content">
-                <a href="calendar.html">Calendar</a>
-                |
-                <a href="event-highlights.html">Event Highlights</a>
-            </div>
-        </div> <!-- End of Events subnav section -->
-        <div class="subnav">
-            <!--Training subnav section-->
-            <button class="subnavbtn">
-                Training <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="subnav-content">
-                <a href="ctf-training.html">CTF Challenges</a>
-                |
-                <a href="the-armory.html">The Armory</a>
-            </div>
-        </div> <!-- End of Training subnav section -->
-        <div class="subnav">
-            <!--About Us subnav section-->
-            <button class="subnavbtn">
-                About Us <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="subnav-content">
-                <a href="about-us.html">About Us</a>
-                |
-                <a href="membership.html">Membership</a>
-            </div>
-        </div> <!-- End of Training subnav section -->
-  <div class="subnav">
-            <!--Contact Us subnav section-->
-            <a id="homeBtn" href="contact-us.html">Contact Us</a>
-      
-        </div> <!-- End of Contact Us subnav section -->
-    </div> <!-- End of navbar section -->
-    <!-- Start of main section -->
-    <main>
+<!-- Tag for Top of Page Link -->
+<a id="top"></a>
+<header>
+    <!-- Header content including the logo and MGA Cyberknights title located at the top of each page -->
+    <div class="headerContent">
+        <img class="KnightsLogo" src="images/CyberknightsLogo.png" alt="MGA Cyberknights Logo" />
+        <img class="MGATitle" src="images/mgacyber.png" alt="MGA Cyberknights" />
+    </div>
+</header> <!-- End of header section -->
+<!-- Start of navbar section -->
+<nav class="navbar">
+    <!-- Code to help separate the navbar links -->
+    <div class="menu-tab">Menu</div>
+    <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </a>
+    <!-- Navbar page links -->
+    <div class="navbar-links">
+        <ul>
+            <!-- Home page link -->
+            <li><a href="index.html">Home</a></li>
+            <!-- Events subnav section -->
+            <li>
+                <div class="subnav">
+                    <button class="subnavbtn">
+                        Events <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="subnav-content">
+                        <!-- Calendar page link -->
+                        <a href="calendar.html"><img src="images/arrow-icon.png" alt="nav-arrow" />Calendar</a>
+                        <br />
+                        <!-- Event Highlights page link -->
+                        <a href="event-highlights.html"><img src="images/arrow-icon.png" alt="nav-arrow" />Highlights</a>
+                    </div>
+                </div>
+            </li> <!-- End of Events subnav section -->
+            <!-- Training subnav section -->
+            <li>
+                <div class="subnav">
+                    <button class="subnavbtn">
+                        Training <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="subnav-content">
+                        <!-- CTF Challenges page link -->
+                        <a href="ctf-training.html"><img src="images/arrow-icon.png" alt="nav-arrow" />CTF Challenges</a>
+                        <br />
+                        <!-- The Armory page link -->
+                        <a href="the-armory.html"><img src="images/arrow-icon.png" alt="nav-arrow" />The Armory</a>
+                    </div>
+                </div>
+            </li> <!-- End of Training subnav section -->
+            <!-- About Us subnav section -->
+            <li>
+                <div class="subnav">
+                    <button class="subnavbtn">
+                        About Us <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="subnav-content">
+                        <!-- About Us page link -->
+                        <a href="about-us.html"><img src="images/arrow-icon.png" alt="nav-arrow" />About Us</a>
+                        <br />
+                        <!-- Membership page link -->
+                        <a href="membership.html"><img src="images/arrow-icon.png" alt="nav-arrow" />Membership</a>
+                    </div>
+                </div>
+            </li> <!-- End of About Us subnav section -->
+            <!-- Contact Us page link -->
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </div> <!-- End of Navbar page links -->
+</nav> <!-- End of navbar section -->
+<!-- Start of main section -->
+<main>
     <!-- Start of wrapper section -->
-        <div class="wrapper">
+    <div class="wrapper">
         <!-- Start of pageContent section -->
-            <div class="pageContent">
-            <!-- TEAM2 NOTES== Insert all page content within this section -->
+        <div class="pageContent">
             <br /><br />
-            <h1>
+            <h1 id="eventsHighlightsTitle">
                 Events Highlights
             </h1>
-			<br /><br />
-			<br /><br />
-			<h2>Cyberknights Shine In National Cyber League Competitions (2018) </h2>
-			
-            <p class='tab'>
-               The Cyberknights placed in the top tiers of a National Cyber League competition. 
-			   They were divided into three teams for the competition. 
-            </p>
-			<p class='tab'>
-               Tyler “Ras” Rasmussen’s Cyberknights team placed 19th out of the field of 266 national competitors. 
-			   His team members included Jessica Whidby, Taylor Brantley, Jacob Corley, and Roger Rambo. 
-			   The team earned 2,635 total points out of a possible 3,000.
-            </p>
-			<p class='tab'>
-               The second team, led by Tanner Hughes, finished 49th of out 266 teams.
-			   The members of this team included Meredith Moore, Jared Morehouse, Richard “Tyler” Price, and Dallas Hoffman.
-			   The team earned 2,065 total points out of a possible 3,000.
-            </p>
-			<p class='tab'>
-              The third team finished 89th out of 266 teams under the leadership of Ryan Johnson.
-			  Team members included Sean Kessinger, Jesse Wilhite, Adam Richards, and Jason Ellingson.
-			  The team earned 1,645 total points out of a possible 3,000.
-            </p>
-			
             <br />
-			
-			
-            <h2>Cyberknights Excel In National Cybersecurity Competition (2018 )</h2>
-            <p class='tab'>
-                Three Middle Georgia State University (MGA) students finished in the top 25 of an online national cybersecurity competition.
-				All seven students participating placed in the top 10 percent. 
-            </p>
-			<p class='tab'>
-                Out of 3,334 participants from various colleges and universities, here is how the MGA students ranked: 
-				Jason Ellingson, 13th; Jacob Corley, 23rd; Dallas Hoffman, 25th; Jessica Whidby, 103rd; Tanner Hughes, 152nd; Andrew Chastain, 177th; and Matthew Godbee, 231st.
-            </p>
-			<br />
-			
-			
-			<h2>Cyberknights Are Four Of Top 10 In Major Cybersecurity Competition (2021)</h2>
-            <p class='tab'>
-                Current or recently graduated Cyberknights students made up four of the top 10 finalists in the 2020 “Secure the Future” event, a grueling multi-month academic competition where contestants come up with strategies to fight major cybersecurity threats.
-				The students/alumni are Victor Fordham, captain of MGA’s CyberKnights organization; Kartavya Trivedi; Caleb Knight; and Laurent Espinosa.
-				As the competition’s third-place winner, Trivedi won a $2,500 cash prize.
-            </p>
-			<p class='tab'>
-                “Secure the Future” competitors chose different industry sectors, such as energy, healthcare, or finance, and developed reports, videos, and presentations related to protecting operational assets through the analysis, comparison, and selection of advanced security tools, methodologies, and implementation options.
-				Participants were tasked to come up with approaches for deploying end-to-end attack detection, alert triage, threat hunting, investigation, orchestration, and automated response activities.
-				In February 2021, all top 10 finalists presented their findings and methodologies to Palo Alto engineers, managers, and directors.
-            </p>
-			<br />
-		
+            <div id="Article1">
+                <h3>Cyberknights Shine In National Cyber League Competitions (2018) </h3>
+                <p class='tab'>
+                    The Cyberknights placed in the top tiers of a National Cyber League competition.
+                    They were divided into three teams for the competition.
+                </p>
+                <p class='tab'>
+                    Tyler “Ras” Rasmussen’s Cyberknights team placed 19th out of the field of 266 national competitors.
+                    His team members included Jessica Whidby, Taylor Brantley, Jacob Corley, and Roger Rambo.
+                    The team earned 2,635 total points out of a possible 3,000.
+                </p>
+                <p class='tab'>
+                    The second team, led by Tanner Hughes, finished 49th of out 266 teams.
+                    The members of this team included Meredith Moore, Jared Morehouse, Richard “Tyler” Price, and Dallas Hoffman.
+                    The team earned 2,065 total points out of a possible 3,000.
+                </p>
+                <p class='tab'>
+                    The third team finished 89th out of 266 teams under the leadership of Ryan Johnson.
+                    Team members included Sean Kessinger, Jesse Wilhite, Adam Richards, and Jason Ellingson.
+                    The team earned 1,645 total points out of a possible 3,000.
+                </p>
+                <a href="https://www.mga.edu/news/2018/05/cyber-knights-2018-competition.php">Read More...</a>
+            </div>
+            <br /><hr /><br />
+            <div id="Article2">
+                <h3>Cyberknights Excel In National Cybersecurity Competition (2018 )</h3>
+                <p class='tab'>
+                    Three Middle Georgia State University (MGA) students finished in the top 25 of an online national cybersecurity competition.
+                    All seven students participating placed in the top 10 percent.
+                </p>
+                <p class='tab'>
+                    Out of 3,334 participants from various colleges and universities, here is how the MGA students ranked:
+                    Jason Ellingson, 13th; Jacob Corley, 23rd; Dallas Hoffman, 25th; Jessica Whidby, 103rd; Tanner Hughes, 152nd; Andrew Chastain, 177th; and Matthew Godbee, 231st.
+                </p>
+                <a href="https://www.mga.edu/news/2018/12/cyber-knights-competition.php">Read More...</a>
+                <br /><hr /><br />
+            </div>
+            <div id="Article3">
+                <h3>Cyberknights Are Four Of Top 10 In Major Cybersecurity Competition (2021)</h3>
+                <p class='tab'>
+                    Current or recently graduated Cyberknights students made up four of the top 10 finalists in the 2020 “Secure the Future” event, a grueling multi-month academic competition where contestants come up with strategies to fight major cybersecurity threats.
+                    The students/alumni are Victor Fordham, captain of MGA’s CyberKnights organization; Kartavya Trivedi; Caleb Knight; and Laurent Espinosa.
+                    As the competition’s third-place winner, Trivedi won a $2,500 cash prize.
+                </p>
+                <p class='tab'>
+                    “Secure the Future” competitors chose different industry sectors, such as energy, healthcare, or finance, and developed reports, videos, and presentations related to protecting operational assets through the analysis, comparison, and selection of advanced security tools, methodologies, and implementation options.
+                    Participants were tasked to come up with approaches for deploying end-to-end attack detection, alert triage, threat hunting, investigation, orchestration, and automated response activities.
+                    In February 2021, all top 10 finalists presented their findings and methodologies to Palo Alto engineers, managers, and directors.
+                </p>
+                <a href="https://www.mga.edu/news/2021/03/mga-top-ten-cyber-competition.php">Read More...</a>
+            </div>
         </div> <!-- End of pageContent section -->
-            <!-- Start of Scripts for Page -->
-        <!--TEAM2 NOTES== This script is for the Home page slideshow; however, until the slideshow is finished, it will remain in comments.
-        <script>
-            var myIndex = 0;
-            carousel();
-
-            function carousel() {
-                var i;
-                var x = document.getElementsByClassName("my-slides");
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
-                }
-                myIndex++;
-                if (myIndex > x.length) { myIndex = 1 }
-                x[myIndex - 1].style.display = "block";
-                setTimeout(carousel, 2000); // Change image every 2 seconds
-            }
-        </script> -->
-            <footer>
+        <!-- Start of Scripts for Page -->
+        <div class="scripts">
+            <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+            <script src="./Darkmode.js"></script>
+        </div><!-- End of scripts section -->
+        <!-- Start of footer -->
+        <footer>
             <br><hr id="divider1"><br>
+            <!-- Link to bring user back-to-top of page -->
             <a id="back-to-top" href="#top">Back to Top</a>
             <br>
-            <!-- Copywrite Tags and links for the Terms of Use and Privacy Policy page links-->
-            <h3 class="copywrite">&copy; SC - Team 2<br />2022</h3>
+            <!-- Link to the MGA School of Information technology Facebook page -->
+            <a href="https://www.facebook.com/mgainfotech" target="_blank">
+                <span id="facebookLogo">
+                    <img src="images/facebook-logo.png" alt="Facebook logo">
+                </span>
+            </a>
+            <!-- Link to the official MGA website -->
+            <a id="mgaLogo" href="https://www.mga.edu/index.php" target="_blank">
+                <img src="images/logo.jpg" alt="MGA Logo">
+            </a>
+            <br />
+            <!-- Link to the Terms-of-Use and the Privacy-Policy pages -->
             <a href="terms-of-use.html">Terms of Use</a> | <a href="privacy-policy.html">Privacy Policy</a>
-        </footer>
-        </div> <!-- End of wrapper section -->
-    </main> <!-- End of main section -->
+        </footer> <!-- End of the footer-->
+    </div> <!-- End of wrapper section -->
+</main> <!-- End of main section -->
 </html>

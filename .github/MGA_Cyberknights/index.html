@@ -1,10 +1,10 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
 <!-- Start of head section -->
 <head>
-    <!-- Basic Page Needs -->
+    <!-- Basic page meeds -->
     <meta charset="utf-8" />
+    <!-- Title for top of page -->
     <title>MGA Cyberknights | Home</title>
     <!-- Font section -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,75 +18,89 @@
     <!-- StyleSheet Reference section -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Reference for "style.css" within current directory -->
     <link href="style.css" rel="stylesheet" />
-    <!-- Script for potential IE user -->
+
+    <!-- Script for potential IE user to prevent site not working on IE 9 -->
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
 </head> <!-- End of head section -->
 <!-- Tag for Top of Page Link -->
 <a id="top"></a>
 <header>
+    <!-- Header content including the logo and MGA Cyberknights title located at the top of each page -->
     <div class="headerContent">
-        <img id="KnightsLogo" src="images/CyberknightsLogo.png" alt="MGA Cyberknights Logo" />
-        </a>
-        <h1>
-            MGA
-        </h1>
-        <br />
-        <h1>
-            Cyberknights
-        </h1>
-
+        <img class="KnightsLogo" src="images/CyberknightsLogo.png" alt="MGA Cyberknights Logo" />
+        <img class="MGATitle" src="images/mgacyber.png" alt="MGA Cyberknights" />
     </div>
-</header>
+</header> <!-- End of header section -->
 <!-- Start of navbar section -->
-<div class="navbar">
-    <!--Home Page-->
-    <a id="homeBtn" href="index.html">Home</a>
-    <div class="subnav">
-        <button class="subnavbtn">
-            <!--Events subnav section-->
-            Events <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="subnav-content">
-            <a href="calendar.html">Calendar</a>
-            |
-            <a href="event-highlights.html">Event Highlights</a>
-        </div>
-    </div> <!-- End of Events subnav section -->
-    <div class="subnav">
-        <!--Training subnav section-->
-        <button class="subnavbtn">
-            Training <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="subnav-content">
-            <a href="ctf-training.html">CTF Challenges</a>
-            |
-            <a href="the-armory.html">The Armory</a>
-        </div>
-    </div> <!-- End of Training subnav section -->
-    <div class="subnav">
-        <!--About Us subnav section-->
-        <button class="subnavbtn">
-            About Us <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="subnav-content">
-            <a href="about-us.html">About Us</a>
-            |
-            <a href="membership.html">Membership</a>
-        </div>
-    </div> <!-- End of Training subnav section -->
-    <div class="subnav">
-        <!--Contact Us subnav section-->
-        <div class="subnav">
-            <!--Contact Us subnav section-->
-            <a id="homeBtn" href="contact-us.html">Contact Us</a>
-
-        </div> <!-- End of Contact Us subnav section -->
-    </div> <!-- End of Contact Us subnav section -->
-</div> <!-- End of navbar section -->
+<nav class="navbar">
+    <!-- Code to help separate the navbar links -->
+    <div class="menu-tab">Menu</div>
+    <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </a>
+    <!-- Navbar page links -->
+    <div class="navbar-links">
+        <ul>
+            <!-- Home page link -->
+            <li><a href="index.html">Home</a></li>
+            <!-- Events subnav section -->
+            <li>
+                <div class="subnav">
+                    <button class="subnavbtn">
+                        Events <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="subnav-content">
+                        <!-- Calendar page link -->
+                        <a href="calendar.html"><img src="images/arrow-icon.png" alt="nav-arrow" />Calendar</a>
+                        <br />
+                        <!-- Event Highlights page link -->
+                        <a href="event-highlights.html"><img src="images/arrow-icon.png" alt="nav-arrow" />Highlights</a>
+                    </div>
+                </div>
+            </li> <!-- End of Events subnav section -->
+            <!-- Training subnav section -->
+            <li>
+                <div class="subnav">
+                    <button class="subnavbtn">
+                        Training <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="subnav-content">
+                        <!-- CTF Challenges page link -->
+                        <a href="ctf-training.html"><img src="images/arrow-icon.png" alt="nav-arrow" />CTF Challenges</a>
+                        <br />
+                        <!-- The Armory page link -->
+                        <a href="the-armory.html"><img src="images/arrow-icon.png" alt="nav-arrow" />The Armory</a>
+                    </div>
+                </div>
+            </li> <!-- End of Training subnav section -->
+            <!-- About Us subnav section -->
+            <li>
+                <div class="subnav">
+                    <button class="subnavbtn">
+                        About Us <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="subnav-content">
+                        <!-- About Us page link -->
+                        <a href="about-us.html"><img src="images/arrow-icon.png" alt="nav-arrow" />About Us</a>
+                        <br />
+                        <!-- Membership page link -->
+                        <a href="membership.html"><img src="images/arrow-icon.png" alt="nav-arrow" />Membership</a>
+                    </div>
+                </div>
+            </li> <!-- End of About Us subnav section -->
+            <!-- Contact Us page link -->
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </div> <!-- End of Navbar page links -->
+</nav> <!-- End of navbar section -->
 <!-- Start of main section -->
 <main>
     <!-- Start of wrapper section -->
@@ -95,10 +109,11 @@
         <div class="pageContent">
             <!-- TEAM2 NOTES== Insert all page content within this section -->
             <br />
-            <div id="Home_Slideshow_About_Sec">
+            <!-- First section of Home page: Home_Title, Slideshow, and brief description -->
+            <div id="Home_About">
                 <h1>
                     Welcome to the
-                    <a class="Home_Title_Sub">
+                    <a class="Home_Title" href="about-us.html">
                         MGA Cyberknights
                     </a>
                 </h1>
@@ -116,43 +131,26 @@
                     The MGA Cyberknights are a student and alumni-led organization formed to further students’ understanding of Cybersecurity
                     concepts and represent MGA in national and international cyber-related competitions.
                 </p>
-                <!-- Button link to associated page -->
-                <button class="page_button">
-                    <a href="about-us.html">LEARN MORE</a>
-                </button>
                 <br />
-            </div>
+            </div> <!-- End of Home_About -->
             <!-- Current or Upcoming Events page link section -->
             <div id="Home_Calendar_Sec">
-                <h1>Current or Upcoming Events</h1>
-                <!-- Purple calendar clipart, floated left of below calendar description -->
+                <a class="Home_Title" href="calendar.html">Current or Upcoming Events</a>
+                <!-- Purple calendar clipart -->
                 <img class="clipart" id="Home_Calendar_Clipart" src="images/calendar-icon-purple.png" alt="Calendar Clipart" />
                 <p class="tab">
                     Stay up to date on any current or upcoming events!
                     The Calendar will keep you informed regarding meetings, Capture the Flag Challenges, or any other special events.
+                    Plus, if you want to learn more about some of the results and highlights from past events
+                    or challenges, navigate to the Event Highlights page!
                 </p>
-                <p class="tab">
-                    If you want to learn more about some of the results and highlights from past events or challenges, click on the button below!
-                </p>
-                <!-- Start of Home_Two_Buttons div-->
-                <div class="Home_Two_Buttons">
-                    <!-- Button link to associated page -->
-                    <button class="page_button" id="calendar-button">
-                        <a href="calendar.html">CALENDAR</a>
-                    </button>
-                    <!-- Button link to associated page -->
-                    <button class="page_button" id="event-highlight-button">
-                        <a href="event-highlights.html">LEARN MORE</a>
-                    </button>
-                </div> <!--End of Home_Two_Buttoms div-->
-                <br />
-            </div> <!-- End of Home_Calendar_Sec div -->
+            </div> <!-- End of Upcoming Events page link section -->
             <!-- CTF Challenge Training page link section -->
             <div id="Home_CTF_Training_Sec">
-                <h1>
+                <a class="Home_Title" href="ctf-training.html">
                     Capture the Flag Challenges
-                </h1>
-                <!-- CTF Challenge Clipart, floated left of below CTF Training description -->
+                </a>
+                <!-- CTF Challenge Clipart -->
                 <img class="clipart" id="Home_CTF_Spaceman" src="images/ctf_spaceman.png" alt="CTF Spaceman Clipart" />
                 <p class="tab">
                     As mentioned above, the MGA Cyberknights take great pride in paticipating in and completing Capture the Flag Challenges.
@@ -160,53 +158,30 @@
                     in these challenges, check out the CTF Challenges page.
                 </p>
                 <!-- Button link to associated page -->
-                <button class="page_button">
-                    <a href="ctf-training.html">LEARN MORE</a>
-                </button>
-            </div>
+            </div> <!-- End of CTF Challenge Training page link section -->
+            <br>
             <!-- The Armory Training page link section -->
-            <div id="Home_Armory_Sec">
-                <h1>
-                    The Armory
-                </h1>
+            <div id="Home_Armory">
+                <a class="Home_Title" href="the-armory.html">The Armory</a>
                 <!-- The Armory Clipart, floated left of below The Armory description -->
                 <img class="clipart" id="Home_Armory_Knight" src="images/knight_clipart.png" alt="Purple Knight Clipart" />
                 <p class="tab">
-                    Many CTF Challenges incorporate many different tools, programs, methods, and other concepts from Information Technology
-                    outside of Cybersecurity or Penetration Testing. Therefore, we working on and compiling an expansive list of various links,
+                    Many CTF Challenges incorporate many different tools, programs, methods, and concepts from Information Technology,
+                    Cybersecurity, and Penetration Testing such as <a href="METASPLOIT.html">Metasploit</a>, <a href="MSFVENOM.html">MSFvenom</a>,
+                    <a href="PIVOTING.html">Pivoting</a>, <a href="POST-EXPLOITATING.html">Post-Exploitation</a>, among many others. Therefore, we working on and compiling an expansive list of various links,
                     Linux Distributions, and all-around helpful tools that anyone interested in Information Technology will find useful.
-                </p>
-                <h1>
-                    We have aptly named that list<br /><a class="Home_Title_Sub">The Armory</a>
-                </h1>
-                <!-- Button link to associated page -->
-                <button class="page_button">
-                    <a href="the-armory.html">ENTER THE ARMORY</a>
-                </button>
-            </div>
-            <div id="Home_Contact_Sec">
-                <h1>
-                    Contact Us
-                </h1>
-                <!-- Contact Us Clipart, floated left of below the Contact Us description -->
-                <img class="clipart" id="Home_Contact_Clipart" src="images/contact_clipart.png" alt="Purple Contact Folder Clipart" />
-                <p class="tab">
-                    If you would like to get in touch with us, one of the best ways to do that is through the MGA Cyberknights Discord server,
-                    which serves as our main medium of communication outside of the weekly meetings. However, you can always send us an
-                    email through the Contact Us page.
+                    We have aptly named that list The Armory.
                 </p>
                 <!-- Button link to associated page -->
-                <button class="page_button">
-                    <a href="contact-us.html">CONTACT US</a>
-                </button>
-            </div>
+            </div> <!-- End of The Armory Training page link section -->
             <br />
             <hr />
+            <!-- Call to Action -->
             <div id="Home_Membership_Sec">
                 <h1>
                     Join the MGA Cyberknights,
                     <br />
-                    <a class="Home_Title_Sub" href="membership.html">TODAY!</a>
+                    <a class="Home_Title" href="membership.html">TODAY!</a>
                 </h1>
                 <a href="https://discord.gg/jXPyAPFWv5" target="_blank">
                     <img id="Home_CTA_Img" src="images/prop2.png" alt="MGA Cyberknight Recruitment" />
@@ -214,45 +189,79 @@
                 <div class="Home_CTA_Para">
                     <p class="tab">
                         If you would like to build connections with like minded people who share similar interests,
-                        let us know. There are no membership fees, dues, or anything of the like.
+                        are interested in competing in Capture the Flag Challenges and want to learn more about Cybersecurity and IT
+                        in general, join the MGA Cyberknights.
                     </p>
+                    <ul>
+                        <li>The option to compete in high-level competitions</li>
+                        <li>No membership fees and no dues</li>
+                        <li>Professional, academic, and alumni support</li>
+                        <li>Be a part of an active community of IT Professionals and newcomers alike</li>
+                    </ul>
                     <p class="tab">
-                        If you are interested in competing in Capture the Flag Challenges, want to learn more about Cybersecurity and IT
-                        in general, or you just want to some fun,
+                        The best way to get in touch with us is through the MGA Cyberknights Discord server,
+                        which serves as the main medium of communication outside of the weekly meetings. However, you can
+                        always send us an email through the Contact Us page.
                     </p>
                 </div>
                 <a class="Home_CTA_Closer" href="membership.html">join the MGA Cyberknights</a>
-                
-            </div>
-
-
-
-        </div> <!-- End of pageContent section -->
+            </div> <!-- End of Call to Action -->
+            <!-- Facebook Integration section-->
+            <div id="Facebook_Integration">
+                <p class="text-center">
+                    Follow the School of Information Technology page on Facebook
+                </p>
+                <!-- Facebook embed of the MGA School of Information technology page -->
+                <iframe id="facebookEmbed"
+                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmgainfotech&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
+                        width="340" height="500" style="overflow:hidden" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
+                </iframe>
+                <br>
+                <!-- Button link to associated page -->
+                <a href="contact-us.html"><span class="page_button">Contact Us</span></a>
+            </div> <!-- End of Facebook Integration section -->
+        </div> <!-- End of pageContent-->
         <!--Start of script section-->
-        <script>
-            var myIndex = 0;
-            carousel();
+        <div class="scripts">
+            <script>
+                var myIndex = 0;
+                carousel();
 
-            function carousel() {
-                var i;
-                var x = document.getElementsByClassName("my-slides");
-                for (i = 0; i < x.length; i++) {
-                    x[i].style.display = "none";
+                function carousel() {
+                    var i;
+                    var x = document.getElementsByClassName("my-slides");
+                    for (i = 0; i < x.length; i++) {
+                        x[i].style.display = "none";
+                    }
+                    myIndex++;
+                    if (myIndex > x.length) { myIndex = 1 }
+                    x[myIndex - 1].style.display = "block";
+                    setTimeout(carousel, 10000); // Change image every 2 seconds
                 }
-                myIndex++;
-                if (myIndex > x.length) { myIndex = 1 }
-                x[myIndex - 1].style.display = "block";
-                setTimeout(carousel, 10000); // Change image every 2 seconds
-            }
-        </script>
+            </script>
+            <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+            <script src="./Darkmode.js"></script>
+        </div> <!-- End of script section -->
+        <!-- Start of footer -->
         <footer>
             <br><hr id="divider1"><br>
+            <!-- Link to bring user back-to-top of page -->
             <a id="back-to-top" href="#top">Back to Top</a>
             <br>
-            <!-- Copywrite Tags and links for the Terms of Use and Privacy Policy page links-->
-            <h3 class="copywrite">&copy; SC - Team 2<br />2022</h3>
+            <!-- Link to the MGA School of Information technology Facebook page -->
+            <a href="https://www.facebook.com/mgainfotech" target="_blank">
+                <span id="facebookLogo">
+                    <img src="images/facebook-logo.png" alt="Facebook logo">
+                </span>
+            </a>
+            <!-- Link to the official MGA website -->
+            <a id="mgaLogo" href="https://www.mga.edu/index.php" target="_blank">
+                <img src="images/logo.jpg" alt="MGA Logo">
+            </a>
+            <br />
+            <!-- Link to the Terms-of-Use and the Privacy-Policy pages -->
             <a href="terms-of-use.html">Terms of Use</a> | <a href="privacy-policy.html">Privacy Policy</a>
-        </footer>
+        </footer> <!-- End of the footer-->
     </div> <!-- End of wrapper section -->
 </main> <!-- End of main section -->
 </html>

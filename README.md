@@ -1,7 +1,6 @@
 # Cyberknights-Website
 Cyberknights Website files
 
-To access the current files, follow the filepath ../.github/MGA_Cyberknights/ from the previous page. 
+Welcome to the Github for the MGA Cyberknights website developed by Team 2 for the Spring 2022 Senior Capstone.
 
-**Please, become familiar with how Github takes and receives Push/Pull requests!** The burden of understanding how to submit your contributions to the
-project through Github does not fall on your classmates or me. - RC
+If you have any trouble or questions, please email randall.callihan@mga.edu

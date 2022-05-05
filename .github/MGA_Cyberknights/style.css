@@ -2,6 +2,9 @@
     Style Sheet for the MGA Cyberknights website
     Spring 2022
     Designed by MGA SC-Team2
+*/
+
+/*
     Color Codes Used:
     Black			: #000000
 	White			: #FFFFFF
@@ -21,10 +24,6 @@
 
 /*          global styles
 ================================================== */
-
-* {
-    font-family: 'Roboto Serif', sans-serif;
-}
 
 h1 {
     text-align: center;
@@ -51,12 +50,16 @@ h3 {
 iframe {
     display: block;
     margin: auto;
+    isolation: isolate;
+    max-width: 70%;
 }
+
 
 /* Indention class */
 .tab {
     text-indent: 40px;
 }
+
 
 /* Photo class style */
 .photo-shadow {
@@ -78,8 +81,8 @@ body {
     font-family: 'Roboto Serif', sans-serif;
     background-color: white;
     font-weight: bold;
-
 }
+
 
 /* Gradiant Background Animation style */
 @keyframes bg-animation {
@@ -92,9 +95,12 @@ body {
     }
 }
 
-
 .text-center {
     text-align: center;
+}
+
+#msfvenom {
+    width: 100%;
 }
 
 
@@ -102,22 +108,21 @@ body {
 ================================================== */
 header {
     text-align: center;
-    display: contents;
+    display: block;
     margin: 0;
-    padding: 25px 25px;
     background-color: lightgray;
 }
 
-    header h1 {
-        font-size: 65px;
-        font-family: 'Roboto Serif', sans-serif;
-        margin: 0;
-        font-weight: bold;
-        padding-top: 15px;
-        padding-right: 25%;
-        padding-left: 5%;
-        text-shadow: 3px 3px #369019;
-    }
+.Header_Text {
+    font-size: 65px;
+    font-family: 'Roboto Serif', sans-serif;
+    margin: 0;
+    font-weight: bold;
+    padding-top: 15px;
+    padding-right: 25%;
+    padding-left: 5%;
+    text-shadow: 3px 3px #369019;
+}
 
 .headerContent {
     width: 100%;
@@ -125,40 +130,72 @@ header {
     padding-bottom: 15px;
     background-image: var(--gradiant);
     background-size: 300%;
-    animation: bg-animation 20s infinite alternate;
-    
+    animation: bg-animation 15s infinite alternate;
 }
+
 
 /* header image style
 ================================================== */
-#KnightsLogo {
+.KnightsLogo {
     max-height: 260px;
     float: left;
-    margin-right: 15px;
-    padding-left: 15%;
-    padding-right: 5%;
+    margin-right: 0px;
+    padding-left: 25%;
+    padding-right: 2%;
+    margin-top: 5px;
+    max-width: 50%;
+}
+
+#KnightsLogo_Membership {
+    max-height: 260px;
+    float: left;
+    margin-right: 0px;
+    padding-left: 25%;
+    padding-right: 2%;
     margin-top: 5px;
 }
 
+.MGATitle {
+    max-height: 250px;
+    float: left;
+    margin-right: 45px;
+    padding-left: 0%;
+    padding-right: 5%;
+    padding-top: 30px;
+    margin-top: 5px;
+    max-width: 40%;
+}
 
-/* navbar section style  
+/* Navbar Styles
 ================================================== */
 .navbar {
-    background-color: #f1f1f1;
     position: sticky;
     width: 100%;
     text-align: center;
     text-decoration: none;
-    padding: 15px;
-    font-size: 1.6em;
+    padding: 25px 50px;
+    padding-bottom: 5px;
     line-height: 25px;
     border-radius: 4px;
+    font-size: 1.6em;
     outline: 7px solid #633394;
     background-color: #2C2C2C;
     z-index: 99;
 }
 
-    .navbar a {
+.navbar-links ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+}
+
+.navbar-links li {
+    list-style: none;
+    width: 100%;
+}
+
+    .navbar-links li a {
         color: white;
         text-align: center;
         padding: 12px 12px;
@@ -167,38 +204,42 @@ header {
         line-height: 25px;
         border-radius: 4px;
         width: 20%;
+        text-shadow: 3px 3px #633394;
     }
 
-#homeBtn {
+.menu-tab {
+    position: absolute;
+    padding: 6px;
+    justify-content: left;
+    display: none;
     color: white;
-    text-align: center;
-    padding: 25px 50px;
     text-decoration: none;
-    line-height: 25px;
-    border-radius: 4px;
-    width: 20%;
+    font-size: 1.6em;
+    padding-left: 20px;
     text-shadow: 3px 3px #633394;
+    margin-left: 10px;
 }
 
-/* subnav section style  
-================================================== */
 .subnav {
     float: none;
     display: inline-block;
     position: relative;
+    bottom: 12px;
+    padding-right: 25px;
 }
 
 .subnav-content {
-    font-size: 0.7em;
+    font-size: 0.55em;
     display: none;
     position: absolute;
     left: 0;
     background-color: #633394;
-    width: max-content;
     z-index: 1;
-    padding-top: 25px;
-    padding-bottom: 25px;
     border: 7px solid black;
+    line-height: 30px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-shadow: 3px 3px black;
 }
 
     .subnav-content a {
@@ -207,21 +248,28 @@ header {
         text-shadow: 3px 3px black;
     }
 
+        .subnav-content a:hover {
+            color: black;
+        }
+
 .subnav .subnavbtn {
+    float: none;
+    display: inline-block;
+    position: relative;
     font-size: 1.6em;
     border: none;
     outline: none;
     color: white;
-    padding: 25px 50px;
     background-color: inherit;
     font-family: inherit;
-    margin: 0;
+    margin-bottom: 0px;
     text-shadow: 3px 3px #633394;
 }
 
 .subnav:hover .subnav-content {
     display: block;
 }
+
 
 /* Page Wrapper Style 
 ================================================== */
@@ -236,6 +284,7 @@ header {
     font-weight: bold;
 }
 
+
 /* footer styles
 ================================================== */
 footer {
@@ -243,12 +292,21 @@ footer {
     padding-bottom: 20px;
 }
 
-    footer h3 {
-        font-family: 'Roboto Serif', sans-serif;
-        font-weight: bold;
-        color: black;
-        text-shadow: 1px 1px #633394;
-    }
+#mgaLogo {
+    max-width: 10%;
+}
+
+#facebookLogo {
+    max-width: 10%;
+}
+
+footer h3 {
+    font-family: 'Roboto Serif', sans-serif;
+    font-weight: bold;
+    color: black;
+    text-shadow: 1px 1px #633394;
+}
+
 
 /* Style for "divider1" at the top of the footer */
 hr {
@@ -256,21 +314,34 @@ hr {
     width: 100%;
     margin: 0 auto;
 }
-/* 
-    TEAM2 NOTES== If we need to add more styles for a certain page, 
-    add a new comment section such as the above sections 
-*/
 
 
 /* Home page styles */
-
-.Home_Title_Sub {
+.Home_Title {
     font-family: 'Roboto Serif', sans-serif;
     font-weight: bold;
     color: black;
     text-shadow: 2px 2px #369019;
     margin: 0;
     font-size: 45px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.my-slides {
+    display: none;
+    width: 100%;
+}
+
+.slideshow {
+    max-width: 600px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+    border: solid 12px #633394;
+    border-radius: 8px;
 }
 
 .page_button {
@@ -289,36 +360,18 @@ hr {
     margin-right: auto;
     border-radius: 8px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+    width: 225px;
+    height: 80px;
 }
 
     .page_button:hover {
-        background: linear-gradient(#633394 0%, #c9ced1 100%);
-        color: #f2f2f2;
+        background: linear-gradient(white 0%, #808080 100%);
+        color: #1e1e1e;
         text-decoration: none;
         text-align: center;
         text-shadow: 2px 2px #369019;
         box-shadow: none;
     }
-
-.Home_Two_Buttons {
-    margin-left: 25%;
-}
-
-    .Home_Two_Buttons::after {
-        content: "";
-        display: block;
-        clear: both;
-    }
-
-#calendar-button {
-    float: left;
-    border-right: 3px solid black;
-}
-
-#event-highlight-button {
-    float: left;
-    border-left: 3px solid black;
-}
 
 .clipart {
     float: left;
@@ -354,7 +407,6 @@ hr {
     text-align: center;
     font-weight: 900;
     font-size: 1.7em;
-    color: #633394;
     text-decoration: none;
     color: black;
     text-shadow: 2px 2px #369019;
@@ -362,13 +414,20 @@ hr {
     display: block;
 }
 
+#facebookEmbed {
+    border: solid 6px #633394;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
 
 /* calendar tab page styles */
 .calendar {
     border: solid 12px #633394;
     border-radius: 8px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+    width: 90%;
 }
+
 
 /* CTF page styles */
 .CTF-list {
@@ -390,6 +449,7 @@ hr {
     border: solid 12px #633394;
     border-radius: 8px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+    width: 85%;
 }
 
 
@@ -398,6 +458,8 @@ hr {
     text-decoration: none;
     font-size: 1em;
     list-style-type: none;
+    text-align: center;
+    font-weight: bold;
 }
 
 .cybersecurity-source {
@@ -411,7 +473,6 @@ hr {
     font-size: 1em;
     font-style: normal;
 }
-
 
 .metasploit-title {
     font-size: 1.5em;
@@ -430,41 +491,77 @@ hr {
 }
 
 
-/* about us tab page styles */
-
 /*Membership tab page styles*/
 .prop2 {
     width: 20%;
 }
 
+
 /* contact us tab page styles */
 .contact-content {
     text-align: center;
-    font-weight: normal;
+    font-family: 'Roboto Serif', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
 }
-
-/* Slideshow container */
-
-.my-slides {
-    display: none;
-    width: 100%;
-}
-
-.slideshow {
-    max-width: 600px;
-    min-width: 600px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
-    border: solid 12px #633394;
-    border-radius: 8px;
-}
-
-/* 
-    TEAM2 NOTES== I am adding in the section below for a placeholder; once we complete the design phase and start testing, we need to determine
-    what this section with encompass
-*/
-
 /*@Media Styles 
 ================================================== */
+.toggle-button {
+    position: relative;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 30px;
+}
+
+    .toggle-button .bar {
+        height: 3px;
+        width: 100%;
+        background-color: white;
+        border-radius: 10px;
+    }
+
+@media (max-width: 950px) {
+    .toggle-button {
+        display: flex;
+        max-width: 100%;
+        flex-basis: 40%;
+    }
+
+    .navbar-links {
+        display: none;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .navbar-links ul {
+        flex-direction: column;
+        width: 100%;
+        font-size: .8em;
+    }
+
+    .navbar-links li {
+        text-align: center;
+        padding: 15px;
+        text-align: center;
+    }
+
+        .navbar-links li a {
+            padding: .5rem 1rem;
+            text-align: center;
+            position: relative;
+        }
+
+    .navbar-links.active {
+        display: flex;
+    }
+
+    .menu-tab {
+        display: flex;
+    }
+}
